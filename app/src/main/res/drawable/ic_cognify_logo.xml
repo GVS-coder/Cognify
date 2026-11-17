@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cognify Brain/Neural Network Logo -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Outer glow circle -->
+    <path
+        android:fillColor="#1A4F46E5"
+        android:pathData="M48,4a44,44 0,1 1,-44,44 44,44 0,0 1,44,-44z" />
+
+    <!-- Main circle background -->
+    <path
+        android:fillColor="#4F46E5"
+        android:pathData="M48,10a38,38 0,1 1,-38,38 38,38 0,0 1,38,-38z" />
+
+    <!-- Inner circle accent -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M48,16a32,32 0,1 1,-32,32 32,32 0,0 1,32,-32z" />
+
+    <!-- Letter C stylized -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5"
+        android:pathData="M54.5,30.5
+            C50.5,28.5 44.5,28.5 40,31
+            C34,34.5 30.5,41 30.5,48
+            C30.5,55 34,61.5 40,65
+            C44.5,67.5 50.5,67.5 54.5,65.5
+            L54.5,59
+            C51.5,61 47.5,61.5 44,60
+            C39.5,57.5 37,53 37,48
+            C37,43 39.5,38.5 44,36
+            C47.5,34.5 51.5,35 54.5,37
+            Z" />
+
+    <!-- Dot accent -->
+    <path
+        android:fillColor="#0891B2"
+        android:pathData="M56,44m-4,0a4,4 0,1 1,8,0a4,4 0,1 1,-8,0z" />
+
+    <!-- Neural lines top -->
+    <path
+        android:strokeColor="#FFFFFFAA"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M60,36 L68,28" />
+
+    <path
+        android:strokeColor="#FFFFFFAA"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M64,48 L74,44" />
+
+    <path
+        android:strokeColor="#FFFFFFAA"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M60,60 L68,68" />
+
+    <!-- Neural dots -->
+    <path
+        android:fillColor="#0891B2"
+        android:pathData="M68,27m-3,0a3,3 0,1 1,6,0a3,3 0,1 1,-6,0z" />
+
+    <path
+        android:fillColor="#0891B2"
+        android:pathData="M74,43m-3,0a3,3 0,1 1,6,0a3,3 0,1 1,-6,0z" />
+
+    <path
+        android:fillColor="#0891B2"
+        android:pathData="M68,69m-3,0a3,3 0,1 1,6,0a3,3 0,1 1,-6,0z" />
+
+</vector>

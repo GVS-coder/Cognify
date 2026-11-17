@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cognify</string>
+    <string name="app_subtitle">செயற்கை நுண்ணறிவு திறன் கொண்ட உற்பத்தித்திறன் மற்றும் அறிவு மேலாண்மை</string>
+    <string name="app_tagline">அறிவாற்றலுடன் சிந்திப்பீர். சிறப்பாக செயல்படுவீர்.</string>
+
+    <!-- Auth Common -->
+    <string name="label_email">மின்னஞ்சல் முகவரி</string>
+    <string name="label_password">கடவுச்சொல்</string>
+    <string name="label_confirm_password">கடவுச்சொல்லை உறுதிப்படுத்துக</string>
+    <string name="label_full_name">முழு பெயர்</string>
+    <string name="hint_email">உங்கள் மின்னஞ்சலை உள்ளிடுக</string>
+    <string name="hint_password">உங்கள் கடவுச்சொல்லை உள்ளிடுக</string>
+    <string name="hint_confirm_password">உங்கள் கடவுச்சொல்லை மீண்டும் உள்ளிடுக</string>
+    <string name="hint_full_name">உங்கள் முழு பெயரை உள்ளிடுக</string>
+    <string name="hint_reset_email">உங்கள் பதிவு செய்யப்பட்ட மின்னஞ்சலை உள்ளிடுக</string>
+
+    <!-- Login -->
+    <string name="title_welcome_back">மீண்டும் வருக</string>
+    <string name="subtitle_login">உங்கள் பயணத்தைத் தொடர உள்நுழைக</string>
+    <string name="btn_login">உள்நுழைக</string>
+    <string name="tv_forgot_password">கடவுச்சொல் மறந்துவிட்டதா?</string>
+    <string name="tv_no_account">கணக்கு இல்லையா? <b>பதிவு செய்க</b></string>
+    <string name="btn_google_signin">Google மூலம் உள்நுழைக</string>
+
+    <!-- Signup -->
+    <string name="title_create_account">கணக்கை உருவாக்கு</string>
+    <string name="subtitle_signup">உங்கள் உற்பத்தித்திறனை அதிகரிக்க Cognify இல் சேரவும்</string>
+    <string name="btn_signup">கணக்கை உருவாக்கு</string>
+    <string name="tv_have_account">ஏற்கனவே கணக்கு உள்ளதா? <b>உள்நுழைக</b></string>
+
+    <!-- Forgot Password -->
+    <string name="title_forgot_password">கடவுச்சொல்லை மீட்டமைக்க</string>
+    <string name="subtitle_forgot_password">உங்கள் மின்னஞ்சலை உள்ளிடுக, நாங்கள் மீட்டமைப்பதற்கான இணைப்பை அனுப்புவோம்</string>
+    <string name="btn_send_reset">மீட்டமைப்பதற்கான இணைப்பை அனுப்பு</string>
+    <string name="btn_cancel">ரத்துசெய்</string>
+
+    <!-- Dashboard -->
+    <string name="title_dashboard">முகப்பு</string>
+    <string name="subtitle_dashboard">உங்கள் உற்பத்தித்திறன் மையம்</string>
+    <string name="btn_logout">வெளியேறு</string>
+    <string name="tv_dashboard_coming_soon">மேலும் சிறப்பம்சங்கள் கட்டம் 2 இல் வரவிருக்கின்றன!</string>
+    <string name="tv_dashboard_welcome">Cognify-க்கு உங்களை வரவேற்கிறோம்</string>
+
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_app_logo">Cognify இலச்சினை</string>
+    <string name="cd_toggle_password">கடவுச்சொல்லை காண்பி/மறை</string>
+    <string name="cd_loading">ஏற்றப்படுகிறது</string>
+    <string name="cd_open_menu">மெனுவை திற</string>
+    <string name="cd_profile">சுயவிவரம்</string>
+    <string name="cd_add_new">புதிதாக சேர்</string>
+    <string name="cd_save">சேமி</string>
+    <string name="cd_profile_photo">சுயவிவர புகைப்படம்</string>
+
+    <!-- Errors -->
+    <string name="error_generic">ஏதோ தவறு நடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="error_network">இணைய இணைப்பு இல்லை. உங்கள் நெட்வொர்க்கை சரிபார்க்கவும்.</string>
+
+    <!-- Settings -->
+    <string name="title_settings">அமைப்புகள்</string>
+    <string name="settings_appearance">தோற்றம்</string>
+    <string name="settings_theme_mode">தீம் முறை</string>
+    <string name="settings_dynamic_colors">டைனமிக் நிறங்கள் (Android 12+)</string>
+    <string name="settings_language">மொழி</string>
+    
+    <string name="settings_notifications">அறிவிப்புகள்</string>
+    <string name="settings_notify_tasks">பணி நினைவூட்டல்கள்</string>
+    <string name="settings_notify_calendar">நாட்காட்டி நிகழ்வுகள்</string>
+    <string name="settings_notify_daily_summary">தினசரி சுருக்கம்</string>
+    <string name="settings_notify_ai_suggestions">AI பரிந்துரைகள்</string>
+    <string name="settings_notify_weekly_report">வாராந்திர அறிக்கை</string>
+    
+    <string name="settings_ai_settings">AI அமைப்புகள்</string>
+    <string name="settings_ai_default_mode">முன்னிருப்பு AI முறை</string>
+    <string name="settings_ai_usage_today">இன்றைய AI பயன்பாடு</string>
+    <string name="settings_ai_assistant">AI உதவியாளர்</string>
+    <string name="settings_doc_analysis">ஆவண பகுப்பாய்வு</string>
+    
+    <string name="settings_smart_inbox">ஸ்மார்ட் இன்பாக்ஸ்</string>
+    <string name="settings_smart_inbox_desc">பயிற்சிகள், வேலை வாய்ப்புகள், ஹேக்கத்தான்கள் மற்றும் பட்டறைகள் போன்ற முக்கியமான வாய்ப்புகளை அடையாளம் காண Cognify உங்கள் மின்னஞ்சல்களைப் படிக்க Gmail-ஐ இணைக்கவும்.</string>
+    <string name="settings_gmail">Gmail</string>
+    <string name="settings_gmail_connected">இணைக்கப்பட்டது</string>
+    <string name="settings_gmail_connecting">இணைக்கப்படுகிறது...</string>
+    <string name="settings_gmail_not_connected">இணைக்கப்படவில்லை</string>
+    <string name="settings_connect_gmail">Gmail-ஐ இணைக்கவும்</string>
+    <string name="settings_disconnect_gmail">Gmail-ஐ துண்டிக்கவும்</string>
+    <string name="settings_open_smart_inbox">ஸ்மார்ட் இன்பாக்ஸைத் திறக்க</string>
+    
+    <string name="settings_productivity_defaults">உற்பத்தித்திறன் முன்னிருப்புகள்</string>
+    <string name="settings_default_task_priority">முன்னிருப்பு பணி முன்னுரிமை</string>
+    <string name="settings_default_study_duration">முன்னிருப்பு படிப்பு காலம்</string>
+    <string name="settings_first_day_of_week">வாரத்தின் முதல் நாள்</string>
+    
+    <string name="settings_about_support">பற்றி &amp; ஆதரவு</string>
+    <string name="settings_app_desc">செயற்கை நுண்ணறிவு திறன் கொண்ட உற்பத்தித்திறன் மற்றும் அறிவு மேலாண்மை</string>
+    <string name="settings_technology">தொழில்நுட்பம்</string>
+    <string name="settings_tech_stack">Kotlin • Android • Material Design 3 • Room • Firebase • Gemini AI</string>
+    <string name="settings_help_support">உதவி &amp; ஆதரவு</string>
+    <string name="settings_privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="settings_licenses">உரிமங்கள்</string>
+    
+    <string name="settings_danger_zone">ஆபத்தான பகுதி</string>
+    <string name="settings_clear_cache">உள்ளூர் தற்காலிக சேமிப்பை அழி</string>
+    <string name="settings_delete_account">கணக்கை நீக்கு</string>
+
+
+    <!-- Dynamically Extracted UI Strings -->
+    <string name="ui_snooze">உறக்கநிலை</string>
+    <string name="ui_dismiss">நிராகரி</string>
+    <string name="ui_you_are_currently_offline">நீங்கள் தற்போது ஆஃப்லைனில் உள்ளீர்கள்.</string>
+    <string name="ui_08_00_am">08:00 AM</string>
+    <string name="ui_repeat">மீண்டும் செய்</string>
+    <string name="ui_sound">ஒலி</string>
+    <string name="ui_snooze_duration">உறக்கநிலை கால அளவு</string>
+    <string name="ui_vibrate_while_ringing">அடிக்கும் போது அதிர்வு</string>
+    <string name="ui_skip_public_holidays">பொது விடுமுறை நாட்களைத் தவிர்க்கவும்</string>
+    <string name="ui_alarm_label">அலாரம் லேபல்</string>
+    <string name="ui_clear_history">வரலாற்றை அழி</string>
+    <string name="ui_cognify">Cognify</string>
+    <string name="ui_version_1_0_0">பதிப்பு 1.0.0</string>
+    <string name="ui_cognify_is_an_ai_powered_produ">Cognify என்பது AI மூலம் இயங்கும் ஒரு உற்பத்தித்திறன் உதவியாளர். இது பணி நிர்வாகம், அறிவுப் பெட்டகம் மற்றும் உள்ளூர் உருவாக்க நுண்ணறிவு ஆகியவற்றை தடையின்றி ஒன்றிணைக்க வடிவமைக்கப்பட்டுள்ளது.</string>
+    <string name="ui_open_source_licenses">திறந்த மூல உரிமங்கள்</string>
+    <string name="ui_about_cognify">Cognify பற்றி</string>
+    <string name="ui_favorite">விருப்பமானது</string>
+    <string name="ui_pinned">பின் செய்யப்பட்டது</string>
+    <string name="ui_private_note_code_protected_am">தனிப்பட்ட குறிப்பு / குறியீடு (AI-லிருந்து பாதுகாக்கப்பட்டது)</string>
+    
+    <string name="ui_new_entry">புதிய பதிவு</string>
+    <string name="ui_title">தலைப்பு *</string>
+    <string name="ui_type">வகை</string>
+    <string name="ui_enter_custom_type">தனிப்பயன் வகையை உள்ளிடுக</string>
+    <string name="ui_description">விளக்கம்</string>
+    <string name="ui_code_block_optional">குறியீடு தொகுதி (விருப்பத் தேர்வு)</string>
+    <string name="ui_language">மொழி</string>
+    <string name="ui_difficulty">சிரமம்</string>
+    <string name="ui_category">பிரிவு</string>
+    <string name="ui_tags_comma_separated">குறிச்சொற்கள் (கமாக்களால் பிரிக்கப்பட்டவை)</string>
+    <string name="ui_source_url_or_reference">ஆதாரம் (URL அல்லது குறிப்பு)</string>
+    <string name="ui_select_date">தேதியைத் தேர்ந்தெடு</string>
+    <string name="ui_select_time">நேரத்தைத் தேர்ந்தெடு</string>
+    <string name="ui_linked_items_optional">இணைக்கப்பட்ட உருப்படிகள் (விருப்பத் தேர்வு)</string>
+    <string name="ui_notification_preferences_place">அறிவிப்பு விருப்பத்தேர்வுகள்</string>
+    <string name="ui_custom_reminder_sound">தனிப்பயன் நினைவூட்டல் ஒலி</string>
+    <string name="ui_vibrate_on_alert">எச்சரிக்கையில் அதிர்வு</string>
+    <string name="ui_new_reminder">புதிய நினைவூட்டல்</string>
+    <string name="ui_description_optional">விளக்கம் (விருப்பத் தேர்வு)</string>
+    <string name="ui_reminder_type">நினைவூட்டல் வகை</string>
+    <string name="ui_priority">முன்னுரிமை</string>
+    <string name="ui_repeat_interval">மீண்டும் செய்யும் இடைவெளி</string>
+    <string name="ui_link_category">பிரிவை இணை</string>
+    <string name="ui_linked_item_id_or_title">இணைக்கப்பட்ட உருப்படி ID அல்லது தலைப்பு</string>
+    <string name="ui_default_snooze_duration">முன்னிருப்பு உறக்கநிலை கால அளவு</string>
+    <string name="ui_low">குறைவு</string>
+    <string name="ui_medium">நடுத்தரம்</string>
+    <string name="ui_high">அதிகம்</string>
+    <string name="ui_status">நிலை</string>
+    <string name="ui_pending">நிலுவையில் உள்ளது</string>
+    <string name="ui_in_progress">செயல்பாட்டில் உள்ளது</string>
+    <string name="ui_completed">முடிக்கப்பட்டது</string>
+    <string name="ui_select_due_date">கெடு தேதியைத் தேர்ந்தெடு</string>
+    <string name="ui_save_task">பணியை சேமி</string>
+    <string name="ui_delete_task">பணியை நீக்கு</string>
+    <string name="ui_task_details">பணி விவரங்கள்</string>
+    <string name="ui_task_title">பணி தலைப்பு</string>
+    <string name="ui_category_e_g_work_personal">பிரிவு (உ.ம். வேலை, தனிப்பட்டவை)</string>
+    <string name="ui_ai_chat">✨ AI அரட்டை</string>
+    <string name="ui_0_20_used_today">இன்று 20 இல் 0 பயன்படுத்தப்பட்டது</string>
+    <string name="ui_hello">Hello</string>
+    <string name="ui_what_would_you_like_to_work_on">இன்று நீங்கள் என்ன வேலை செய்ய விரும்புகிறீர்கள்?</string>
+    <string name="ui_delete_note">குறிப்பை நீக்கவா?</string>
+    <string name="ui_professional">தொழில்முறை</string>
+    <string name="ui_i_am_a_student">நான் ஒரு மாணவன்</string>
+    <string name="ui_this_action_cannot_be_undone">இந்த செயலை திரும்பப் பெற முடியாது.</string>
+    
+    <string name="ui_confirm">உறுதி செய்</string>
+    <string name="ui_cognify_ai_is_thinking">Cognify AI சிந்திக்கிறது...</string>
+    <string name="ui_cognify_ai_assistant">Cognify AI உதவியாளர்</string>
+    <string name="ui_what_is_on_your_mind">உங்கள் மனதில் என்ன இருக்கிறது?</string>
+    <string name="ui_ai_assistant">AI உதவியாளர்</string>
+    <string name="ui_document_analysis">ஆவண பகுப்பாய்வு</string>
+    <string name="ui_limits_reset_daily_at_local_mi">உள்ளூர் நள்ளிரவில் வரம்புகள் தினமும் மீட்டமைக்கப்படும்.</string>
+    <string name="ui_ai_usage_limits">AI பயன்பாட்டு வரம்புகள்</string>
+    <string name="ui_productivity">உற்பத்தித்திறன்</string>
+    <string name="ui_study_streak">படிப்புத் தொடர்</string>
+    <string name="ui_tasks_done">முடிக்கப்பட்ட பணிகள்</string>
+    <string name="ui_knowledge">அறிவு</string>
+    <string name="ui_productivity_insight">உற்பத்தித்திறன் நுண்ணறிவு</string>
+    <string name="ui_ai_generating_insights">AI நுண்ணறிவுகளை உருவாக்குகிறது...</string>
+    <string name="ui_weekly_tasks">வாராந்திர பணிகள்</string>
+    <string name="ui_activity_timeline">செயல்பாட்டு காலக்கோடு</string>
+    <string name="ui_not_enough_data_yet">போதிய தரவு இல்லை</string>
+    <string name="ui_keep_using_cognify_and_your_pr">Cognify-ஐ தொடர்ந்து பயன்படுத்துங்கள், உங்கள் உற்பத்தித்திறன் நுண்ணறிவுகள் இங்கே தோன்றும்.</string>
+    <string name="ui_analytics">பகுப்பாய்வு</string>
+    <string name="ui_local_backup_status">உள்ளூர் காப்புப்பிரதி நிலை</string>
+    <string name="ui_checking">சரிபார்க்கிறது...</string>
+    <string name="ui_last_backup">கடைசி காப்புப்பிரதி</string>
+    <string name="ui_items_synced">ஒத்திசைக்கப்பட்டவை</string>
+    <string name="ui_backup_size">காப்புப்பிரதி அளவு</string>
+    <string name="ui_backup_data">காப்புப்பிரதி தரவு</string>
+    <string name="ui_restore_data">தரவை மீட்டமை</string>
+    <string name="ui_backup_amp_restore">காப்புப்பிரதி &amp; மீட்டமை</string>
+    <string name="ui_normal">சாதாரண</string>
+    <string name="ui_sci">அறிவியல்</string>
+    <string name="ui_currency">நாணயம்</string>
+    <string name="ui_deg">DEG</string>
+    <string name="ui_ac">AC</string>
+    <string name="ui_del">DEL</string>
+    <string name="ui_7">7</string>
+    <string name="ui_8">8</string>
+    <string name="ui_9">9</string>
+    <string name="ui_4">4</string>
+    <string name="ui_5">5</string>
+    <string name="ui_6">6</string>
+    <string name="ui_2">2</string>
+    <string name="ui_3">3</string>
+    <string name="ui_sin">sin</string>
+    <string name="ui_cos">cos</string>
+    <string name="ui_tan">tan</string>
+    <string name="ui_e">e</string>
+    <string name="ui_ln">ln</string>
+    <string name="ui_log">log</string>
+    <string name="ui_usd">USD</string>
+    <string name="ui_eur">EUR</string>
+    <string name="ui_1_usd_0_92_eur">1 USD = 0.92 EUR</string>
+    <string name="ui_rate_updated_2026_09_21">நிறுவப்பட்ட தேதி: 2026-09-21</string>
+    <string name="ui_unable_to_fetch_the_latest_exc">சமீபத்திய பரிமாற்ற விகிதத்தைப் பெற முடியவில்லை.</string>
+    <string name="ui_clear">அழி</string>
+    <string name="ui_calculator">கால்குலேட்டர்</string>
+    <string name="ui_no_events_today">இன்று நிகழ்வுகள் இல்லை.</string>
+    <string name="ui_tap_the_button_to_add_a_new_ev">புதிய நிகழ்வை சேர்க்க + பொத்தானை அழுத்தவும்.</string>
+    <string name="ui_calendar_amp_schedule">நாட்காட்டி &amp; அட்டவணை</string>
+    <string name="ui_alarm">அலாரம்</string>
+    <string name="ui_timer">டைமர்</string>
+    <string name="ui_stopwatch">ஸ்டாப்வாட்ச்</string>
+    <string name="ui_add_new_alarm">+ புதிய அலாரத்தை சேர்</string>
+    <string name="ui_05_00">05:00</string>
+    <string name="ui_1_min">+1 min</string>
+    <string name="ui_5_min">+5 min</string>
+    <string name="ui_10_min">+10 min</string>
+    <string name="ui_set">அமை</string>
+    <string name="ui_start">தொடங்கு</string>
+    <string name="ui_reset">மீட்டமை</string>
+    <string name="ui_00_00_00">00:00.00</string>
+    <string name="ui_lap">சுற்று</string>
+    <string name="ui_clock_amp_timers">கடிகாரம் மற்றும் டைமர்கள்</string>
+    <string name="ui_hh">HH</string>
+    <string name="ui_mm">MM</string>
+    <string name="ui_ss">SS</string>
+    <string name="ui_no_code_snippets_saved_yet_nta">குறியீடுகள் எதுவும் இதுவரை சேமிக்கப்படவில்லை.
+முதல் குறியீட்டைச் சேர்க்க + ஐ அழுத்தவும்!</string>
+    <string name="ui_code_base_amp_snippets">குறியீட்டுத் தளம் &amp; துணுக்குகள்</string>
+    <string name="ui_search_code_snippets">குறியீட்டுத் துணுக்குகளைத் தேடுக...</string>
+    <string name="ui_no_recent_conversations">சமீபத்திய உரையாடல்கள் இல்லை</string>
+    <string name="ui_recent_conversations">சமீபத்திய உரையாடல்கள்</string>
+    <string name="ui_what_s_on_your_agenda_today">இன்று உங்கள் நிகழ்ச்சி நிரலில் என்ன இருக்கிறது?</string>
+    <string name="ui_add_task">பணியை சேமி</string>
+    <string name="ui_add_note">குறிப்பைச் சேர்</string>
+    <string name="ui_add_reminder">நினைவூட்டலைச் சேர்</string>
+    <string name="ui_schedule">அட்டவணை</string>
+    <string name="ui_today_s_progress">இன்றைய முன்னேற்றம்</string>
+    <string name="ui_0">0%</string>
+    <string name="ui_0_of_0_tasks_completed">0 இல் 0 பணிகள் முடிக்கப்பட்டன</string>
+    <string name="ui_productivity_overview">உற்பத்தித்திறன் கண்ணோட்டம்</string>
+    <string name="ui_today_s_tasks">இன்றைய பணிகள்</string>
+    <string name="ui_pending_tasks">நிலுவையிலுள்ள பணிகள்</string>
+    <string name="ui_notes">குறிப்புகள்</string>
+    <string name="ui_snippets">துணுக்குகள்</string>
+    <string name="ui_weekly_activity">வாராந்திர செயல்பாடு</string>
+    <string name="ui_today">இன்று</string>
+    <string name="ui_done">முடிந்தது</string>
+    <string name="ui_no_tasks_yet">பணிகள் எதுவும் இல்லை.</string>
+    <string name="ui_today_s_schedule">இன்றைய அட்டவணை</string>
+    <string name="ui_view_calendar">நாட்காட்டியைக் காண்க</string>
+    <string name="ui_search_tasks_reminders">பணிகள், நினைவூட்டல்களைத் தேடுக...</string>
+    <string name="ui_0_3_used_today">இன்று 3 இல் 0 பயன்படுத்தப்பட்டது</string>
+    <string name="ui_analyze_a_document">ஆவணத்தை பகுப்பாய்வு செய்க</string>
+    <string name="ui_summarize_pdfs_notes_and_ntech">PDF-கள், குறிப்புகள் மற்றும்
+தொழில்நுட்ப ஆவணங்களை AI மூலம் சுருக்கவும்</string>
+    <string name="ui_select_document">ஆவணத்தைத் தேர்ந்தெடு</string>
+    <string name="ui_what_would_you_like_to_do">நீங்கள் என்ன செய்ய விரும்புகிறீர்கள்?</string>
+    <string name="ui_try_again">மீண்டும் முயற்சி செய்</string>
+    <string name="ui_analyze_document">ஆவணத்தை பகுப்பாய்வு செய்க</string>
+    <string name="ui_discard_document">ஆவணத்தை நிராகரி</string>
+    <string name="ui_ai_analysis">AI பகுப்பாய்வு</string>
+    <string name="ui_copy">நகலெடு</string>
+    <string name="ui_analyzing_document">ஆவணத்தை பகுப்பாய்வு செய்கிறது...</string>
+    <string name="ui_instruction_e_g_summarize_this">அறிவுறுத்தல் (உ.ம். இந்த ஆவணத்தை சுருக்கவும்)</string>
+    <string name="ui_select_data_to_export">ஏற்றுமதி செய்ய தரவைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="ui_export_your_saved_notes">உங்கள் சேமிக்கப்பட்ட குறிப்புகளை ஏற்றுமதி செய்க</string>
+    <string name="ui_code">குறியீடு</string>
+    <string name="ui_export_your_programming_knowle">உங்கள் நிரலாக்க அறிவை ஏற்றுமதி செய்க</string>
+    <string name="ui_generate_export">ஏற்றுமதியை உருவாக்கு</string>
+    <string name="ui_export_data">தரவை ஏற்றுமதி செய்க</string>
+    <string name="ui_open_in_gmail">Gmail-ல் திறக்கவும்</string>
+    <string name="ui_ai_smart_extraction">AI ஸ்மார்ட் பகுப்பாய்வு</string>
+    <string name="ui_analyze_email_with_ai">AI மூலம் மின்னஞ்சலை பகுப்பாய்வு செய்க</string>
+    <string name="ui_original_content">அசல் உள்ளடக்கம்</string>
+    <string name="ui_email_details">மின்னஞ்சல் விவரங்கள்</string>
+    <string name="ui_how_does_ai_mode_work">AI முறை எவ்வாறு வேலை செய்கிறது?</string>
+    <string name="ui_cognify_uses_a_locally_integra">நீங்கள் AI அம்சங்களைப் பயன்படுத்தும்போது, தொடர்புடைய உள்ளடக்கம் செயலாக்கத்திற்காக Cognify இன் பின்தளத்தின் மூலம் மூன்றாம் தரப்பு AI சேவை வழங்குநர்களுக்கு அனுப்பப்படலாம். இது வழங்குநர்களின் விதிமுறைகளுக்கு உட்பட்டது.</string>
+    <string name="ui_where_is_my_data_stored">என் தரவு எங்கே சேமிக்கப்படுகிறது?</string>
+    <string name="ui_by_default_all_your_data_is_st">முன்னிருப்பாக, உங்கள் தரவு அனைத்தும் தனியுரிமைக்காக உங்கள் சாதனத்தில் உள்ளூரில் சேமிக்கப்படுகிறது. கிளவுட் ஒத்திசைவை இயக்கினால், அது Firebase Firestore-ல் பாதுகாப்பாக காப்புப் பிரதி எடுக்கப்படும்.</string>
+    
+    <string name="ui_faq_cognify_overview">Cognify என்ன?</string>
+    <string name="ui_faq_cognify_overview_desc">Cognify என்பது பணி மேலாண்மை, அறிவுத் தடம், AI உதவி மற்றும் ஆவணப் பகுப்பாய்வு ஆகியவற்றை ஒருங்கிணைக்கும் ஒரு உற்பத்தித்திறன் பயன்பாடு ஆகும்.</string>
+    <string name="ui_faq_tasks_notes">பணிகள் மற்றும் குறிப்புகளை எவ்வாறு நிர்வகிப்பது?</string>
+    <string name="ui_faq_tasks_notes_desc">முகப்புத் திரையிலிருந்து பணிகள் மற்றும் குறிப்புகளை உருவாக்கவும், திருத்தவும், ஒழுங்கமைக்கவும் முடியும். அவற்றுக்கான நினைவூட்டல்களையும் அமைக்கலாம்.</string>
+    <string name="ui_faq_smart_inbox">Smart Inbox எவ்வாறு செயல்படுகிறது?</string>
+    <string name="ui_faq_smart_inbox_desc">வாய்ப்புகளைக் கண்டறிய Smart Inbox பாதுகாப்பாக உங்கள் Gmail ஐப் படிக்கிறது. பகுப்பாய்விற்காக மின்னஞ்சல் உள்ளடக்கம் எங்கள் பின்தளம் மற்றும் மூன்றாம் தரப்பு AI சேவைகளுக்கு அனுப்பப்படலாம். தரவு விளம்பரத்திற்கு பயன்படுத்தப்படுவதில்லை.</string>
+    <string name="ui_faq_account_login">என் கணக்கு எவ்வாறு செயல்படுகிறது?</string>
+    <string name="ui_faq_account_login_desc">நீங்கள் Cognify-ஐ விருந்தினராகப் பயன்படுத்தலாம் அல்லது உங்கள் தரவைப் பாதுகாப்பாக ஒத்திசைக்க Google/மின்னஞ்சல் மூலம் உள்நுழையலாம்.</string>
+    <string name="ui_faq_settings">அமைப்புகளை எவ்வாறு மாற்றுவது?</string>
+    <string name="ui_faq_settings_desc">உங்கள் தீம், மொழி, AI விருப்பத்தேர்வுகள் மற்றும் அறிவிப்பு அமைப்புகளை மாற்ற அமைப்புகள் தாவலுக்குச் செல்லவும்.</string>
+    <string name="ui_help_amp_faq">உதவி &amp; FAQ</string>
+    <string name="ui_all">அனைத்தும்</string>
+    <string name="ui_sql">SQL</string>
+    <string name="ui_linux">Linux</string>
+    <string name="ui_interview">நேர்காணல்</string>
+    <string name="ui_favorites">விருப்பமானவை</string>
+    <string name="ui_your_knowledge_vault_is_empty">உங்கள் அறிவு பெட்டகம் காலியாக உள்ளது</string>
+    <string name="ui_save_notes_code_and_useful_inf">பின்னர் விரைவாக அணுக குறிப்புகள், குறியீடு மற்றும் பயனுள்ள தகவல்களை
+இங்கே சேமிக்கவும்.</string>
+    <string name="ui_knowledge_vault">அறிவு பெட்டகம்</string>
+    <string name="ui_search_knowledge">அறிவைத் தேடுக...</string>
+    <string name="ui_or">அல்லது</string>
+    <string name="ui_data_collection_amp_privacy">தரவு சேகரிப்பு &amp; தனியுரிமை</string>
+    <string name="ui_cognify_values_your_privacy_by">Cognify உங்கள் தனியுரிமையை மதிக்கிறது. முன்னிருப்பாக, அனைத்து பணிகளும், அறிவுப் பெட்டக உருப்படிகளும், அமைப்புகளும் உள்ளூர் தரவுத்தளத்தைப் பயன்படுத்தி உங்கள் சாதனத்தில் மட்டுமே சேமிக்கப்படும்.
+
+நீங்கள் உள்நுழைய விரும்பினால், உங்கள் தரவு (பணிகள், குறிப்புகள், நினைவூட்டல்கள், வரம்புகள், சுயவிவரப் படம்) ஒத்திசைவை அனுமதிக்க Firebase Firestore இல் பாதுகாப்பாக காப்புப் பிரதி எடுக்கப்படும். உங்கள் சுயவிவரப் படம் Firebase Authentication ஆல் நிர்வகிக்கப்படுகிறது.</string>
+    <string name="ui_generative_ai">ஜெனரேட்டிவ் AI</string>
+    <string name="ui_when_using_the_ai_features_rel">நீங்கள் Cognify இன் AI அம்சங்களைப் பயன்படுத்தும் போது, நீங்கள் வழங்கும் தொடர்புடைய உள்ளடக்கம் செயலாக்கம் மற்றும் கோரப்பட்ட முடிவை உருவாக்குவதற்காக Cognify இன் பின்தள உள்கட்டமைப்பு மூலம் மூன்றாம் தரப்பு AI சேவை வழங்குநர்களுக்கு அனுப்பப்படலாம். இந்த உள்ளடக்கத்தைக் கையாள்வது அந்தந்த வழங்குநரின் விதிமுறைகள் மற்றும் தனியுரிமை நடைமுறைகளுக்கும் உட்பட்டது.</string>
+    <string name="ui_privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="ui_edit_profile">சுயவிவரத்தைத் திருத்து</string>
+    <string name="ui_quick_statistics">விரைவு புள்ளிவிவரங்கள்</string>
+    <string name="ui_tasks">பணிகள்</string>
+    <string name="ui_data_management">தரவு மேலாண்மை</string>
+    <string name="ui_backup_amp_sync">காப்புப்பிரதி &amp; ஒத்திசைவு</string>
+    <string name="ui_sign_out">வெளியேறு</string>
+    <string name="ui_profile_unavailable">சுயவிவரம் கிடைக்கவில்லை</string>
+    <string name="ui_please_sign_in_again_to_load_y">உங்கள் கணக்குத் தகவலை ஏற்ற மீண்டும் உள்நுழையவும்.</string>
+    <string name="ui_sign_in">உள்நுழைக</string>
+    <string name="ui_profile">சுயவிவரம்</string>
+    <string name="ui_active">செயலில் உள்ளது</string>
+    <string name="ui_birthdays">பிறந்தநாட்கள்</string>
+    <string name="ui_task_deadlines">பணி கெடு</string>
+    <string name="ui_no_reminders_scheduled">நினைவூட்டல்கள் எதுவும் திட்டமிடப்படவில்லை</string>
+    <string name="ui_tap_the_button_to_create_a_new">புதிய நினைவூட்டலை உருவாக்க + பொத்தானை அழுத்தவும்.</string>
+    <string name="ui_reminders">Reminders</string>
+    <string name="ui_not_connected">இணைக்கப்படவில்லை</string>
+    <string name="ui_cognify_reads_your_gmail_messa">வாய்ப்புகள் தொடர்பான மின்னஞ்சல்களை அடையாளம் காண Cognify Google இன் படிக்க மட்டுமேயான Gmail அனுமதியைப் பயன்படுத்துகிறது. Cognify மின்னஞ்சல்களை அனுப்பவோ, நீக்கவோ, மாற்றவோ அல்லது உருவாக்கவோ முடியாது. தரவு Smart Inbox அம்சத்தை வழங்குவதற்கு மட்டுமே பயன்படுத்தப்படுகிறது, மேலும் இது விளம்பரத்திற்கு பயன்படுத்தப்படுவதில்லை.</string>
+    <string name="ui_no_messages_found">செய்திகள் எதுவும் காணப்படவில்லை</string>
+    <string name="ui_smart_inbox">ஸ்மார்ட் இன்பாக்ஸ்</string>
+    <string name="ui_custom_search_keyword">தனிப்பயன் தேடல் சொல்</string>
+    <string name="ui_07_00_am">07:00 AM</string>
+    <string name="ui_3_minutes_left">3 நிமிடங்கள் உள்ளன</string>
+    <string name="ui_morning_alarm_mon_tue_wed_thu">காலை அலாரம் • திங்கள், செவ், புதன், வியாழன், வெள்ளி</string>
+    <string name="ui_retry">மீண்டும் முயற்சி செய்</string>
+    <string name="ui_lap_1">சுற்று 1</string>
+    <string name="ui_open">திற</string>
+    <string name="ui_delete">நீக்கு</string>
+    <string name="ui_create_new">புதிதாக உருவாக்கு</string>
+    <string name="ui_new_task">New Task</string>
+    <string name="ui_new_note">புதிய குறிப்பு</string>
+    <string name="ui_new_code_snippet">புதிய குறியீட்டுத் துணுக்கு</string>
+    <string name="ui_cognify_user">Cognify பயனர்</string>
+    <string name="ui_user_cognify_app">user@cognify.app</string>
+
+    <!-- Dynamic Kotlin Strings -->
+    <string name="dashboard_greeting">%1$s
+%2$s 👋</string>
+    <string name="dashboard_progress_tasks">%2$d இல் %1$d பணிகள் முடிக்கப்பட்டன</string>
+    <string name="dashboard_last_synced">கடைசியாக ஒத்திசைக்கப்பட்டது: %1$s</string>
+    <string name="dashboard_loading">ஏற்றப்படுகிறது...</string>
+    <string name="calendar_schedule_for">%1$s க்கான அட்டவணை</string>
+    <string name="calendar_items_scheduled">%1$d திட்டமிடப்பட்டுள்ளது</string>
+    <string name="alarm_snooze_duration">உறக்கநிலை (%1$dநி)</string>
+    <string name="alarm_item_subtitle">அலாரம் • %1$s</string>
+    <string name="settings_gmail_disconnected">Gmail துண்டிக்கப்பட்டது</string>
+    <string name="settings_cache_cleared">தற்காலிக சேமிப்பு அழிக்கப்பட்டது</string>
+    <string name="settings_account_deleted">கணக்கு நீக்கப்பட்டது</string>
+    <string name="settings_account_delete_failed">கணக்கை நீக்க முடியவில்லை</string>
+    <string name="settings_version">பதிப்பு %1$s</string>
+    <string name="settings_ai_usage">இன்று %1$d / %2$d மீதமுள்ளது</string>
+    <string name="smart_inbox_conn_expired">Gmail இணைப்பு காலாவதியானது. தயவுசெய்து அமைப்புகளில் உங்கள் Gmail கணக்கை மீண்டும் இணைக்கவும்.</string>
+    <string name="smart_inbox_no_internet">இணைய இணைப்பு இல்லை. உங்கள் இணைப்பை சரிபார்த்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="smart_inbox_no_messages">செய்திகள் எதுவும் காணப்படவில்லை</string>
+    <string name="smart_inbox_cant_open">Gmail-ஐ திறக்க முடியவில்லை</string>
+    <string name="smart_inbox_analyses_rem">இன்று உங்களிடம் %1$d பகுப்பாய்வுகள் மீதமுள்ளன (%2$d/%3$d).</string>
+    <string name="smart_inbox_datetime">தேதி/நேரம்: %1$s</string>
+    <string name="smart_inbox_deadline">கெடு: %1$s</string>
+    <string name="smart_inbox_action_items">செயல் உருப்படிகள்:
+</string>
+    <string name="task_subtitle">%1$s • %2$s</string>
+    <string name="task_due_in">%1$d நாட்களில் கெடு</string>
+    <string name="task_overdue">தாமதமானது — %1$d நாட்களுக்கு முன் கெடு முடிந்தது</string>
+    <string name="auth_failed">அங்கீகாரம் தோல்வியடைந்தது: %1$s</string>
+    <string name="code_copied">குறியீடு நகலெடுக்கப்பட்டது</string>
+    <string name="profile_photo_updated">சுயவிவர புகைப்படம் புதுப்பிக்கப்பட்டது</string>
+    <string name="profile_photo_failed">புகைப்படத்தைப் புதுப்பிக்க முடியவில்லை</string>
+    <string name="profile_photo_removed">சுயவிவர புகைப்படம் அகற்றப்பட்டது</string>
+    <string name="profile_updated_success">சுயவிவரம் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!</string>
+    <string name="export_cancelled">ஏற்றுமதி ரத்து செய்யப்பட்டது</string>
+    <string name="export_select_data">ஏற்றுமதி செய்ய தரவைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="reminder_time">நேரம்: </string>
+    <string name="reminder_linked">இணைக்கப்பட்டது: %1$s</string>
+    <string name="speech_not_supported">இந்தச் சாதனத்தில் பேச்சு அறிதல் ஆதரிக்கப்படவில்லை.</string>
+    <string name="analytics_tasks_completed">முடிக்கப்பட்ட பணிகள்</string>
+
+    <string name="smart_inbox_dialog_title">மின்னஞ்சலை பகுப்பாய்வு செய்க</string>
+    <string name="smart_inbox_dialog_message">உங்கள் மின்னஞ்சல் உள்ளடக்கம் பாதுகாப்பாக AIக்கு அனுப்பப்படும். நீங்கள் தொடர விரும்புகிறீர்களா?</string>
+    <string name="smart_inbox_dialog_proceed">தொடரவும்</string>
+    <string name="smart_inbox_dialog_cancel">ரத்துசெய்</string>
+    <string name="smart_inbox_no_subject">தலைப்பு இல்லை</string>
+    <string name="smart_inbox_unknown_sender">அறியாத அனுப்புநர்</string>
+
+    <string name="ui_connected">இணைக்கப்பட்டது</string>
+    <string name="ui_disconnect_gmail">Gmail-ஐ துண்டி</string>
+    <string name="ui_connecting">இணைக்கிறது...</string>
+    <string name="ui_connect_gmail">Gmail-ஐ இணை</string>
+
+    <string name="ui_unlock_private_note">தனிப்பட்ட குறிப்பைத் திறக்க</string>
+    <string name="ui_edit_entry">பதிவைத் திருத்து</string>
+    <string name="ui_edit_reminder">நினைவூட்டலைத் திருத்து</string>
+    <string name="ui_edit_task">பணியைத் திருத்து</string>
+
+    <string name="ui_today_schedule_calendar">இன்றைய அட்டவணை மற்றும் நாட்காட்டி</string>
+    <string name="ui_clock_alarm_timers">கடிகாரம், அலாரம் மற்றும் டைமர்கள்</string>
+    <string name="ui_productivity_insights">உற்பத்தித்திறன் நுண்ணறிவு</string>
+    <string name="ui_code_base_snippets">குறியீடு தளம் மற்றும் துணுக்குகள்</string>
+    <string name="ui_account">கணக்கு</string>
+    <string name="ui_profile_settings">சுயவிவரம் மற்றும் அமைப்புகள்</string>
+
+
+    <!-- Additional Tamil Strings -->
+    <string name="ui_good_morning">காலை வணக்கம்,</string>
+    <string name="ui_good_afternoon">மதிய வணக்கம்,</string>
+    <string name="ui_good_evening">மாலை வணக்கம்,</string>
+    <string name="ui_good_night">இரவு வணக்கம்,</string>
+    
+    <string name="ui_hello_name">வணக்கம் %1$s</string>
+    <string name="ui_how_can_i_help">நான் இன்று உங்களுக்கு எப்படி உதவ முடியும்?</string>
+    <string name="ui_saved_knowledge_vault">அறிவுப் பெட்டகத்தில் சேமிக்கப்பட்டது</string>
+    
+    <string name="ui_ai_sugg_tasks">இன்றைய எனது பணிகளை சுருக்கமாகக் கூறு</string>
+    
+    <string name="ui_ai_sugg_tips">உற்பத்தித்திறனுக்கான சில குறிப்புகள் என்ன?</string>
+    <string name="ui_ai_sugg_intern">எனது மின்னஞ்சல்களிலிருந்து இன்டர்ன்ஷிப் வாய்ப்புகளைக் கண்டுபிடி</string>
+    <string name="ui_ai_sugg_goals">எனது இலக்குகளை மதிப்பாய்வு செய்ய நினைவூட்டு</string>
+    
+    <string name="ui_task_created">பணி உருவாக்கப்பட்டது</string>
+    <string name="ui_task_completed">பணி முடிக்கப்பட்டது</string>
+    <string name="ui_knowledge_added">அறிவு சேர்க்கப்பட்டது</string>
+    <string name="ui_knowledge_viewed">அறிவு பார்க்கப்பட்டது</string>
+    <string name="ui_reminder_completed">நினைவூட்டல் முடிக்கப்பட்டது</string>
+    <string name="ui_searched">தேடப்பட்டது</string>
+    <string name="ui_activity_logged">செயல்பாடு பதிவு செய்யப்பட்டது</string>
+    
+    <string name="ui_analytics_insight_great">சிறந்த பணி! இந்த வாரம் நீங்கள் %1$s பணிகளை முடித்துள்ளீர்கள்.</string>
+    <string name="ui_analytics_insight_try">உங்கள் தொடரை உருவாக்க குறைந்தது ஒரு பணியையாவது முடிக்க முயற்சிக்கவும்.</string>
+
+    <string name="ui_cat_internships">இன்டர்ன்ஷிப்கள்</string>
+    <string name="ui_cat_placements">வேலைவாய்ப்புகள்</string>
+    <string name="ui_cat_hackathons">ஹேக்கத்தான்கள்</string>
+    <string name="ui_cat_workshops">பயிலரங்குகள்</string>
+    <string name="ui_cat_symposiums">கருத்தரங்குகள்</string>
+    <string name="ui_cat_seminars">கருத்தரங்குகள்</string>
+    <string name="ui_cat_college_events">கல்லூரி நிகழ்வுகள்</string>
+    <string name="ui_cat_company_opportunities">நிறுவனத்தின் வாய்ப்புகள்</string>
+    <string name="ui_cat_important_deadlines">முக்கியமான காலக்கெடு</string>
+    
+    <string name="ui_smart_inbox_subtitle">உங்கள் ஜிமெயிலில் இருந்து முக்கியமான மின்னஞ்சல்கள்</string>
+
+    <string name="dashboard_overdue_tasks">உங்களிடம் %1$d காலதாமதமான பணிகள் உள்ளன. அவற்றுக்கு முன்னுரிமை வழங்க AI-யிடம் உதவி கேட்கலாம்.</string>
+    <string name="ai_greeting">வணக்கம், %1$s</string>
+    <string name="analytics_no_data">விளக்கப்படத் தரவு எதுவும் இல்லை.</string>
+
+    <string name="settings_theme_light">ஒளி (Light)</string>
+    <string name="settings_theme_dark">இருள் (Dark)</string>
+    <string name="settings_theme_system">கணினி (System)</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_ta">தமிழ்</string>
+    <string name="settings_ai_general">பொது (General)</string>
+    <string name="settings_ai_task">பணி (Task)</string>
+    <string name="settings_ai_knowledge">அறிவு (Knowledge)</string>
+    <string name="settings_ai_study">பயிற்சி (Study)</string>
+    <string name="settings_priority_low">குறைந்த (Low)</string>
+    <string name="settings_priority_medium">நடுத்தரம் (Medium)</string>
+    <string name="settings_priority_high">அதிக (High)</string>
+    <string name="settings_day_sunday">ஞாயிற்றுக்கிழமை</string>
+    <string name="settings_day_monday">திங்கட்கிழமை</string>
+    <string name="ui_schedule_for">%1$s க்கான அட்டவணை</string>
+    <string name="ui_new_chat">புதிய அரட்டை</string>
+    <string name="ui_history">வரலாறு</string>
+
+    <string name="ui_cat_custom">தனிப்பயன்</string>
+    <string name="ui_knowledge_subtitle">உங்கள் தனிப்பட்ட அறிவுத் தொகுப்பு</string>
+    <plurals name="analytics_study_duration_days">
+        <item quantity="one">1 நாள்</item>
+        <item quantity="other">%d நாட்கள்</item>
+    </plurals>
+    <plurals name="analytics_weekly_completed_tasks">
+        <item quantity="one">இந்த வாரம் 1 பணியை முடித்துள்ளீர்கள். தொடர்ந்து சிறப்பாக செயல்படுங்கள்!</item>
+        <item quantity="other">இந்த வாரம் %d பணிகளை முடித்துள்ளீர்கள். தொடர்ந்து சிறப்பாக செயல்படுங்கள்!</item>
+    </plurals>
+    <plurals name="ui_minutes">
+        <item quantity="one">%d நிமிடம்</item>
+        <item quantity="other">%d நிமிடங்கள்</item>
+    </plurals>
+    <string name="ui_new_alarm">புதிய அலாரம்</string>
+    <string name="ui_edit_alarm">அலாரத்தைத் திருத்து</string>
+    <string name="ui_knowledge_type_note">குறிப்பு</string>
+    <string name="ui_knowledge_type_code">குறியீடு</string>
+    <string name="ui_knowledge_type_link">இணைப்பு</string>
+    <string name="ui_type_general">பொதுவானது</string>
+    <string name="ui_type_meeting">கூட்டம்</string>
+    <string name="ui_type_deadline">கெடு</string>
+    <string name="ui_others">மற்றவை</string>
+    <string name="ui_priority_high">அதிகம்</string>
+    <string name="ui_priority_medium">நடுத்தரம்</string>
+    <string name="ui_priority_low">குறைவு</string>
+    <string name="ui_repeat_none">மீண்டும் இல்லை</string>
+    <string name="ui_repeat_daily">தினமும்</string>
+    <string name="ui_repeat_weekly">வாரம்</string>
+    <string name="ui_repeat_monthly">மாதம்</string>
+    <string name="ui_repeat_yearly">வருடம்</string>
+    <string name="ui_link_none">எதுவுமில்லை</string>
+    <string name="ui_link_task">பணி</string>
+    <string name="ui_link_knowledge">அறிவு</string>
+    <string name="ui_repeat_once">ஒருமுறை</string>
+    <string name="ui_repeat_every_day">தினமும்</string>
+    <string name="ui_repeat_mwf">திங்கள், புதன், வெள்ளி</string>
+    <string name="ui_alarm_default">இயல்புநிலை அலாரம்</string>
+    <string name="ui_alarm_classic">கிளாசிக்</string>
+    <string name="ui_alarm_gentle">மென்மையான</string>
+    <string name="ui_alarm_beep">பீப்</string>
+    <string name="ui_alarm_digital">டிஜிட்டல்</string>
+    <string name="ui_alarm_silent">அமைதி</string>
+    <string name="ui_save">சேமி</string>
+    <string name="ui_cancel">ரத்து செய்</string>
+    <string name="ui_ai_sugg_email">X பற்றி ஒரு மின்னஞ்சலை உருவாக்கவும்</string>
+    <string name="ui_ai_sugg_concept">ஒரு சிக்கலான கருத்தை விளக்கவும்</string>
+
+
+    <string name="ui_task_category">பணி வகை: %s</string>
+    <string name="ui_reminder_text">நினைவூட்டல்</string>
+
+    <string name="ui_knowledge_type_sql">SQL</string>
+    <string name="ui_knowledge_type_linux">Linux</string>
+    <string name="ui_knowledge_type_interview">நேர்காணல்</string>
+    <string name="ui_knowledge_type_japanese">ஜப்பானியம்</string>
+    <string name="ui_knowledge_type_college">கல்லூரி</string>
+    <string name="ui_knowledge_type_documentation">ஆவணப்படுத்தல்</string>
+    <string name="ui_contact_support">ஆதரவைத் தொடர்பு கொள்க</string>
+    <string name="ui_contact_support_email">krctstu@gmail.com</string>
+    <string name="ui_no_email_app_found">மின்னஞ்சல் பயன்பாடு எதுவும் கிடைக்கவில்லை.</string>
+    <string name="ui_gmail_integration">Gmail ஒருங்கிணைப்பு</string>
+    <string name="ui_gmail_integration_desc">நீங்கள் அங்கீகாரம் வழங்கிய பிறகு, Cognify Gmail செய்திகளை அணுகும். தொடர்புடைய வாய்ப்புகளை அடையாளம் காணவும் சுருக்கவும் மின்னஞ்சல் உள்ளடக்கம் Cognify இன் பின்தளம் மற்றும் Smart Inbox / Email Analysis அம்சத்திற்கான மூன்றாம் தரப்பு AI சேவைகளுக்கு அனுப்பப்படலாம். இந்தத் தரவு விளம்பரப்படுத்தலுக்கோ அல்லது தொடர்பில்லாத சுயவிவரத்திற்கோ பயன்படுத்தப்படாது, மேலும் கோரப்பட்ட அணுகல் இந்த விவரிக்கப்பட்ட செயல்பாட்டை வழங்குவதற்கு மட்டுமே வரையறுக்கப்பட்டுள்ளது.</string>
+    <string name="ui_document_analysis_privacy">ஆவண பகுப்பாய்வு</string>
+    <string name="ui_document_analysis_desc">நீங்கள் ஒரு ஆவணத்தைப் பகுப்பாய்வு செய்யும் போது, தேர்ந்தெடுக்கப்பட்ட PDF செயலாக்கத்திற்காக Cognify இன் பின்தளத்திற்கு அனுப்பப்படும், மேலும் உரை பிரித்தெடுத்தல் மற்றும் பகுப்பாய்விற்காக மூன்றாம் தரப்பு சேவைகளுக்கு (OCR.space மற்றும் NVIDIA AI சேவைகள் போன்றவை) அனுப்பப்படலாம். இந்த உள்ளடக்கத்தைக் கையாள்வது அந்தந்த வழங்குநர்களின் விதிமுறைகள் மற்றும் தனியுரிமை நடைமுறைகளுக்கு உட்பட்டது.</string>
+    <string name="ui_local_data_storage">உள்ளூர் தரவு சேமிப்பு</string>
+    <string name="ui_local_data_storage_desc">உங்கள் பணிகள், குறிப்புகள், காலண்டர் நிகழ்வுகள் மற்றும் பயன்பாட்டு விருப்பத்தேர்வுகள் உங்கள் சாதனத்தில் உள்ளூரில் சேமிக்கப்படும். நீங்கள் ஏற்றுமதி செய்யத் தேர்ந்தெடுக்கும் எந்தக் கோப்புகளும் உங்கள் சாதனச் சேமிப்பகத்தில் சேமிக்கப்படும்.</string>
+    <string name="ui_account_deletion">கணக்கு &amp; தரவு நீக்கம்</string>
+    <string name="ui_account_deletion_desc">அமைப்புகள் > கணக்கை நீக்கு என்பதிலிருந்து உங்கள் கணக்கை எந்த நேரத்திலும் நிரந்தரமாக நீக்கலாம். இந்தச் செயல் உங்கள் Firebase Authentication கணக்கு, உங்களின் அனைத்து Firestore கிளவுட் தரவு மற்றும் அனைத்து உள்ளூர் ஆப்ஸ் தரவு (சுயவிவரப் படங்கள் மற்றும் செயலில் உள்ள அமர்வுகள் உட்பட) ஆகியவற்றை நீக்குகிறது. உதவிக்கு, krctstu@gmail.com ஐத் தொடர்பு கொள்ளவும்.</string>
+    <string name="ui_licenses_title">திறந்த மூல உரிமங்கள்</string>
+    <string name="ui_licenses_text">Cognify பின்வரும் திறந்த-மூல மென்பொருளைப் பயன்படுத்துகிறது:\n\n• Kotlin (Apache 2.0)\n• AndroidX Libraries (Apache 2.0)\n• Material Components (Apache 2.0)\n• Firebase (Apache 2.0)\n• Room Database (Apache 2.0)\n• Gson (Apache 2.0)\n• Retrofit &amp; OkHttp (Apache 2.0)\n• Glide (BSD, MIT, Apache 2.0)\n• MPAndroidChart (Apache 2.0)\n• Lottie (Apache 2.0)\n• Markwon (Apache 2.0)\n• PDFBox-Android (Apache 2.0)\n• Exp4j (Apache 2.0)\n• Timber (Apache 2.0)\n• Dagger Hilt (Apache 2.0)\n• Google Generative AI SDK (Apache 2.0)</string>
+    
+    <string name="ui_privacy_consent_title">தனியுரிமை &amp; ஒப்புதல்</string>
+    <string name="ui_privacy_consent_msg">நீங்கள் தொடரும் முன், Cognify-இன் தனியுரிமைக் கொள்கையை மதிப்பாய்வு செய்து, அதை ஏற்கிறீர்கள் என்பதை உறுதிப்படுத்தவும்.</string>
+    <string name="ui_privacy_consent_link">தனியுரிமைக் கொள்கையைக் காண்க</string>
+    <string name="ui_privacy_consent_checkbox">நான் தனியுரிமைக் கொள்கையைப் படித்து ஒப்புக்கொள்கிறேன்.</string>
+    <string name="ui_accept_continue">ஏற்றுக்கொண்டு தொடரவும்</string>
+    <string name="ui_privacy_policy_url" translatable="false">https://sites.google.com/view/cognify-privacy-2026/home</string>
+</resources>

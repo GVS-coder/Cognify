@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="?attr/colorOnSurface"
+        app:title="@string/ui_calculator"
+        app:titleTextColor="?attr/colorOnSurface"
+        app:menu="@menu/menu_calculator" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleGroupMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:layout_marginBottom="@dimen/spacing_sm"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedButton="@+id/btnModeNormal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnModeNormal"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnModeScientific"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_sci" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnModeCurrency"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_currency" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Panel 0: Math (Normal & Scientific) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Display -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|end"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_lg">
+
+                <TextView
+                    android:id="@+id/tvExpression"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="@dimen/text_xl" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="0"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Angle Mode Toggle (Only visible in Scientific) -->
+            <LinearLayout
+                android:id="@+id/layoutAngleMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/spacing_lg"
+                android:paddingBottom="@dimen/spacing_sm"
+                android:gravity="start"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tvAngleMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ui_deg"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorSecondary"
+                    android:padding="@dimen/spacing_sm"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperKeypad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <!-- Normal Keypad -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="4"
+                    android:padding="@dimen/spacing_sm"
+                    android:rowCount="5">
+
+                    <!-- Row 1 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnAC" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_ac" android:textColor="?attr/colorError" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnDel" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_del" android:textColor="?attr/colorSecondary" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnPercent" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="%" android:textColor="?attr/colorSecondary" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnDivide" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="÷" />
+
+                    <!-- Row 2 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn7" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_7" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn8" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_8" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn9" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_9" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnMultiply" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="×" />
+
+                    <!-- Row 3 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn4" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_4" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn5" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_5" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn6" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_6" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnMinus" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="-" />
+
+                    <!-- Row 4 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn1" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="1" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn2" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_2" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn3" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_3" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnPlus" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="+" />
+
+                    <!-- Row 5 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btn0" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnSpan="2" android:layout_columnWeight="2" android:layout_margin="@dimen/spacing_xs" android:text="0" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnDot" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="." />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnEquals" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="=" />
+                </GridLayout>
+
+                <!-- Scientific Keypad -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="5"
+                    android:padding="@dimen/spacing_sm"
+                    android:rowCount="5">
+                    
+                    <!-- Row 1: Sci functions -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSin" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_sin" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnCos" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_cos" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnTan" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_tan" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnPi" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="π" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnE" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_e" android:textSize="12sp" android:padding="0dp" />
+
+                    <!-- Row 2: Sci functions -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnLn" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_ln" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnLog" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_log" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnPow" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="^" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnLeftParen" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="(" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnRightParen" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text=")" android:textSize="12sp" android:padding="0dp" />
+
+                    <!-- Row 3: Numbers and operations -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSqrt" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="√" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci7" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_7" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci8" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_8" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci9" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_9" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciDivide" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="÷" />
+
+                    <!-- Row 4 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciAC" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_ac" android:textColor="?attr/colorError" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci4" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_4" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci5" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_5" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci6" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_6" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciMultiply" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="×" />
+
+                    <!-- Row 5 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciDel" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_del" android:textColor="?attr/colorSecondary" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci1" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="1" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci2" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_2" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci3" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="@string/ui_3" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciMinus" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="-" />
+
+                    <!-- Row 6 -->
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciPercent" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="%" android:textSize="12sp" android:padding="0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSci0" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="0" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciDot" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="." />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciEquals" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="=" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnSciPlus" style="@style/Widget.Cognify.Button.Primary" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1" android:layout_margin="2dp" android:text="+" />
+
+                </GridLayout>
+            </ViewFlipper>
+        </LinearLayout>
+
+        <!-- Panel 1: Currency -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Currency Displays -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_lg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFromCurrency"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ui_usd"
+                        app:icon="@drawable/ic_arrow_drop_down"
+                        app:iconGravity="end" />
+                    
+                    <TextView
+                        android:id="@+id/tvCurrencyAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="0"
+                        android:textSize="40sp"
+                        android:textColor="?attr/colorOnSurface" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageButton
+                        android:id="@+id/btnSwapCurrencies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_swap_vert"
+                        android:contentDescription="Swap currencies"
+                        app:tint="?attr/colorPrimary" />
+
+                    <ImageButton
+                        android:id="@+id/btnRefreshCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_refresh"
+                        android:contentDescription="Refresh rate"
+                        app:tint="?attr/colorSecondary" />
+                    
+                    <ProgressBar
+                        android:id="@+id/progressCurrency"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="16dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnToCurrency"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ui_eur"
+                        app:icon="@drawable/ic_arrow_drop_down"
+                        app:iconGravity="end" />
+                    
+                    <TextView
+                        android:id="@+id/tvCurrencyResult"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="0.00"
+                        android:textSize="32sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCurrencyRateInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end"
+                    android:text="@string/ui_1_usd_0_92_eur"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorSecondary" />
+
+                <TextView
+                    android:id="@+id/tvCurrencyRateDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/ui_rate_updated_2026_09_21"
+                    android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tvCurrencyError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/ui_unable_to_fetch_the_latest_exc"
+                    android:textSize="12sp"
+                    android:textColor="?attr/colorError"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Currency Keypad -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:padding="@dimen/spacing_sm"
+                android:rowCount="4">
+
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr7" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_7" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr8" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_8" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr9" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_9" />
+                
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr4" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_4" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr5" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_5" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr6" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_6" />
+
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr1" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="1" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr2" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_2" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr3" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_3" />
+
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurrDot" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="." />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurr0" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="0" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurrDel" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_del" android:textColor="?attr/colorSecondary" />
+                
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCurrAC" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnSpan="3" android:layout_columnWeight="3" android:layout_margin="@dimen/spacing_xs" android:text="@string/ui_clear" android:textColor="?attr/colorError" />
+
+            </GridLayout>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

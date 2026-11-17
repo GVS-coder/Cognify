@@ -1,0 +1,110 @@
+﻿# Android / Gradle build outputs
+.gradle/
+.kotlin/
+**/build/
+**/.gradle/
+**/.kotlin/
+.externalNativeBuild/
+.cxx/
+captures/
+local.properties
+
+# IDE settings and local workspace
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.dev.vars
+**/.dev.vars.*
+keystore.properties
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+**/google-services.json
+
+# Node.js dependencies and generated backend state
+node_modules/
+**/node_modules/
+.firebase/
+**/.wrangler/
+functions/lib/
+firebase-debug.log
+firebase-debug.*
+
+# Build packages and local artifacts
+/APK/
+/AAB/
+/build/
+/dist/
+/captures/
+
+# Local AI tool state and temporary files
+/GV/
+/scratch/
+
+# Third-party UI/UX skill directory currently excluded by the project
+ui-ux-pro-max-skill/
+
+# Logs
+*.log
+
+# Temporary root-level repair and development scripts
+/add_strings.js
+/append_strings.js
+/apply_final_device_fixes.js
+/fix_colors.ps1
+/fix_colors.py
+/fix_drawables.ps1
+/fix_fragments.js
+/fix_icons.ps1
+/fix_more_drawables.ps1
+/generate_pptx.js
+/remove_duplicates.js
+/replace_aiviewmodel.js
+/replace_clock_fragment.js
+/replace_schedule_items.js
+/strip_bom.ps1
+/test_ai.js
+/test_ai2.js
+/Prompt.txt
+/prject
+/test.pom
+
+# Temporary scripts stored alongside Android source
+/app/src/main/append_strings.js
+/app/src/main/fix.py
+/app/src/main/fix_compile.js
+/app/src/main/fix_dashboard_layout.js
+/app/src/main/fix_drawer.js
+/app/src/main/fix_final_issues.js
+/app/src/main/fix_final_issues_2.js
+/app/src/main/fix_kotlin_strings.js
+/app/src/main/fix_menus.js
+/app/src/main/fix_settings_menu.js
+/app/src/main/remove_duplicates.js
+
+# Generated Firebase Functions build output
+/functions/lib/
+
+# Local Firebase project selection
+/.firebaserc
+
+# Local development artifacts
+/.firebase/
+/GV/
+/scratch/
+/Demo Video/
+/Screenshots/
+
+
+/app/src/main/assets/adi-registration.properties

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Splash Screen -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.cognify.ui.splash.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_consentFragment"
+            app:destination="@id/consentFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Login Screen -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.cognify.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_consentFragment"
+            app:destination="@id/consentFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Signup Screen -->
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.cognify.ui.auth.SignupFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_signupFragment_to_consentFragment"
+            app:destination="@id/consentFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Consent Screen -->
+    <fragment
+        android:id="@+id/consentFragment"
+        android:name="com.cognify.ui.auth.ConsentFragment"
+        android:label="Consent"
+        tools:layout="@layout/fragment_consent">
+
+        <action
+            android:id="@+id/action_consentFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/consentFragment"
+            app:popUpToInclusive="true" />
+            
+        <action
+            android:id="@+id/action_consentFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/consentFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Dashboard (Placeholder) -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.cognify.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+            
+        <action
+            android:id="@+id/action_dashboardFragment_to_addEditTaskFragment"
+            app:destination="@id/addEditTaskFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_knowledgeFragment"
+            app:destination="@id/knowledgeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_addEditKnowledgeFragment"
+            app:destination="@id/addEditKnowledgeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_dashboardFragment_to_aiFragment"
+            app:destination="@id/aiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_dashboardFragment_to_analyticsFragment"
+            app:destination="@id/analyticsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_clockFragment"
+            app:destination="@id/clockFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_codeFragment"
+            app:destination="@id/codeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_dashboardFragment_to_smartInboxFragment"
+            app:destination="@id/smartInboxFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Clock Screen -->
+    <fragment
+        android:id="@+id/clockFragment"
+        android:name="com.cognify.ui.clock.ClockFragment"
+        android:label="Clock &amp; Timers"
+        tools:layout="@layout/fragment_clock" />
+
+    <!-- Calculator Screen -->
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.cognify.ui.calculator.CalculatorFragment"
+        android:label="Calculator"
+        tools:layout="@layout/fragment_calculator" />
+
+    <!-- Code Base Screen -->
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.cognify.ui.code.CodeFragment"
+        android:label="Code Base"
+        tools:layout="@layout/fragment_code">
+        <action
+            android:id="@+id/action_codeFragment_to_addEditKnowledgeFragment"
+            app:destination="@id/addEditKnowledgeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- AI Chat Screen -->
+    <fragment
+        android:id="@+id/aiFragment"
+        android:name="com.cognify.ui.ai.AIFragment"
+        android:label="AI Assistant"
+        tools:layout="@layout/fragment_ai">
+        <action
+            android:id="@+id/action_aiFragment_to_documentAnalysisFragment"
+            app:destination="@id/documentAnalysisFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_aiFragment_to_conversationsFragment"
+            app:destination="@id/conversationsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_aiFragment_to_aiSettingsFragment"
+            app:destination="@id/aiSettingsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/conversationsFragment"
+        android:name="com.cognify.ui.ai.ConversationsFragment"
+        android:label="Recent Conversations"
+        tools:layout="@layout/fragment_conversations" />
+        
+    <fragment
+        android:id="@+id/aiSettingsFragment"
+        android:name="com.cognify.ui.ai.AISettingsFragment"
+        android:label="AI Settings"
+        tools:layout="@layout/fragment_ai_settings" />
+    
+    <!-- Document Analysis Screen -->
+    <fragment
+        android:id="@+id/documentAnalysisFragment"
+        android:name="com.cognify.ui.ai.DocumentAnalysisFragment"
+        android:label="Analyze Document"
+        tools:layout="@layout/fragment_document_analysis" />
+
+    <!-- Add/Edit Task Screen -->
+    <fragment
+        android:id="@+id/addEditTaskFragment"
+        android:name="com.cognify.ui.task.AddEditTaskFragment"
+        android:label="Add/Edit Task"
+        tools:layout="@layout/fragment_add_edit_task">
+        <argument
+            android:name="taskId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="prefillTitle"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="prefillDescription"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="prefillDueDate"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <!-- Knowledge Vault List -->
+    <fragment
+        android:id="@+id/knowledgeFragment"
+        android:name="com.cognify.ui.knowledge.KnowledgeFragment"
+        android:label="Knowledge Vault"
+        tools:layout="@layout/fragment_knowledge">
+
+        <action
+            android:id="@+id/action_knowledgeFragment_to_addEditKnowledgeFragment"
+            app:destination="@id/addEditKnowledgeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Add/Edit Knowledge -->
+    <fragment
+        android:id="@+id/addEditKnowledgeFragment"
+        android:name="com.cognify.ui.knowledge.AddEditKnowledgeFragment"
+        android:label="Add/Edit Entry"
+        tools:layout="@layout/fragment_add_edit_knowledge">
+        <argument
+            android:name="knowledgeId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <!-- Calendar Screen -->
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.cognify.ui.calendar.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_calendarFragment_to_addEditTaskFragment"
+            app:destination="@id/addEditTaskFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_calendarFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_calendarFragment_to_addEditKnowledgeFragment"
+            app:destination="@id/addEditKnowledgeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Reminder List Screen -->
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.cognify.ui.reminder.ReminderFragment"
+        android:label="Reminders"
+        tools:layout="@layout/fragment_reminder">
+        <action
+            android:id="@+id/action_reminderFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Add/Edit Reminder Screen -->
+    <fragment
+        android:id="@+id/addEditReminderFragment"
+        android:name="com.cognify.ui.reminder.AddEditReminderFragment"
+        android:label="Add/Edit Reminder"
+        tools:layout="@layout/fragment_add_edit_reminder">
+        <argument
+            android:name="reminderId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="prefillTitle"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="prefillDescription"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="prefillDateTime"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <!-- Productivity Analytics Screen -->
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.cognify.ui.analytics.AnalyticsFragment"
+        android:label="Productivity Insights"
+        tools:layout="@layout/fragment_analytics" />
+
+    <!-- Profile Screen -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.cognify.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_profileFragment_to_exportFragment"
+            app:destination="@id/exportFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_profileFragment_to_backupFragment"
+            app:destination="@id/backupFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_profileFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Settings Screen -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.cognify.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        
+        <action
+            android:id="@+id/action_settingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+            
+        <action
+            android:id="@+id/action_settingsFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_settingsFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_settingsFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_settingsFragment_to_smartInboxFragment"
+            app:destination="@id/smartInboxFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Smart Inbox Screen -->
+    <fragment
+        android:id="@+id/smartInboxFragment"
+        android:name="com.cognify.ui.smartinbox.SmartInboxFragment"
+        android:label="Smart Inbox"
+        tools:layout="@layout/fragment_smart_inbox">
+        <action
+            android:id="@+id/action_smartInboxFragment_to_gmailEmailDetailsFragment"
+            app:destination="@id/gmailEmailDetailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gmailEmailDetailsFragment"
+        android:name="com.cognify.ui.smartinbox.GmailEmailDetailsFragment"
+        android:label="Email Details"
+        tools:layout="@layout/fragment_gmail_email_details">
+        <argument
+            android:name="messageId"
+            app:argType="string" />
+        <argument
+            android:name="subject"
+            app:argType="string" />
+        <argument
+            android:name="sender"
+            app:argType="string" />
+            
+        <action
+            android:id="@+id/action_gmailEmailDetailsFragment_to_addEditTaskFragment"
+            app:destination="@id/addEditTaskFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+            
+        <action
+            android:id="@+id/action_gmailEmailDetailsFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Export Screen -->
+    <fragment
+        android:id="@+id/exportFragment"
+        android:name="com.cognify.ui.export.ExportFragment"
+        android:label="Export Data"
+        tools:layout="@layout/fragment_export" />
+
+    <!-- Backup Screen -->
+    <fragment
+        android:id="@+id/backupFragment"
+        android:name="com.cognify.ui.backup.BackupFragment"
+        android:label="Backup &amp; Sync"
+        tools:layout="@layout/fragment_backup" />
+
+    <!-- Help Screen -->
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.cognify.ui.help.HelpFragment"
+        android:label="Help &amp; FAQ"
+        tools:layout="@layout/fragment_help" />
+
+    <!-- About Screen -->
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.cognify.ui.about.AboutFragment"
+        android:label="About Cognify"
+        tools:layout="@layout/fragment_about" />
+
+    <!-- Privacy Screen -->
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.cognify.ui.privacy.PrivacyFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/fragment_privacy" />
+
+</navigation>

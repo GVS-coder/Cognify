@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/ui_productivity">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_schedule"
+                    android:icon="@drawable/ic_calendar"
+                    android:title="@string/ui_today_schedule_calendar" />
+                <item
+                    android:id="@+id/nav_knowledge"
+                    android:icon="@drawable/ic_file"
+                    android:title="@string/ui_knowledge_vault" />
+                <item
+                    android:id="@+id/nav_clock"
+                    android:icon="@drawable/ic_clock"
+                    android:title="@string/ui_clock_alarm_timers" />
+                <item
+                    android:id="@+id/nav_analytics"
+                    android:icon="@android:drawable/ic_menu_sort_by_size"
+                    android:title="@string/ui_productivity_insights" />
+                <item
+                    android:id="@+id/nav_calculator"
+                    android:icon="@drawable/ic_calculator"
+                    android:title="@string/ui_calculator" />
+                <item
+                    android:id="@+id/nav_code"
+                    android:icon="@drawable/ic_code"
+                    android:title="@string/ui_code_base_snippets" />
+                <item
+                    android:id="@+id/nav_smart_inbox"
+                    android:icon="@drawable/ic_email"
+                    android:title="@string/ui_smart_inbox" />
+                <item
+                    android:id="@+id/nav_ai"
+                    android:icon="@drawable/ic_brain"
+                    android:title="@string/ui_cognify_ai_assistant" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/ui_account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/ui_profile_settings" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.Cognify" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <!-- Background & surface -->
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/color_text_primary</item>
+        <item name="android:textColorSecondary">@color/color_text_secondary</item>
+        <item name="android:textColorHint">@color/color_text_hint</item>
+
+        <!-- Window -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/color_status_bar</item>
+        <item name="android:navigationBarColor">@color/color_navigation_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Material TextInputLayout Style -->
+        <item name="textInputStyle">@style/Widget.Cognify.TextInputLayout</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.Cognify.Splash" parent="Theme.Cognify">
+        <item name="android:windowBackground">@color/color_splash_background</item>
+    </style>
+
+    <!-- TextInputLayout Style -->
+    <style name="Widget.Cognify.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/color_input_background</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/color_input_border</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="hintTextColor">@color/color_text_hint</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+        <item name="endIconTint">@color/color_text_secondary</item>
+        <item name="errorTextColor">@color/color_error</item>
+        <item name="errorIconTint">@color/color_error</item>
+    </style>
+
+    <!-- Primary Button Style -->
+    <style name="Widget.Cognify.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- Secondary / Text Button Style -->
+    <style name="Widget.Cognify.Button.Secondary" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/color_secondary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">#3338BDF8</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.Cognify.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/color_card</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/color_outline</item>
+        <item name="contentPaddingLeft">24dp</item>
+        <item name="contentPaddingRight">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+    </style>
+
+    <!-- Dialog Style -->
+    <style name="Widget.Cognify.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/color_card</item>
+    </style>
+</resources>

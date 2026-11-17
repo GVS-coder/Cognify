@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dashboard_header"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_lg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_create_new"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="@dimen/text_xl"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/spacing_md"/>
+
+    <!-- New Task -->
+    <LinearLayout
+        android:id="@+id/btnNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_md"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:importantForAccessibility="no"
+            app:tint="?attr/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_new_task"
+            android:textSize="@dimen/text_md"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginStart="@dimen/spacing_md"/>
+    </LinearLayout>
+
+    <!-- New Reminder -->
+    <LinearLayout
+        android:id="@+id/btnNewReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_md"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_clock"
+            android:importantForAccessibility="no"
+            app:tint="?attr/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_new_reminder"
+            android:textSize="@dimen/text_md"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginStart="@dimen/spacing_md"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+

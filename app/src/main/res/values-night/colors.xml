@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors (Emerald/Cyan accents) -->
+    <color name="color_primary">#10B981</color> <!-- Emerald Green -->
+    <color name="color_primary_variant">#059669</color> <!-- Dark Emerald -->
+    <color name="color_secondary">#06B6D4</color> <!-- Cyan -->
+    <color name="color_secondary_variant">#0891B2</color> <!-- Dark Cyan -->
+    <color name="color_accent">#34D399</color> <!-- Light Emerald -->
+
+    <!-- Gradient Colors (Deep Black / Dark Green) -->
+    <color name="gradient_start">#040906</color>
+    <color name="gradient_mid">#06110B</color>
+    <color name="gradient_end">#020403</color>
+
+    <!-- Background Colors (Deep Black / Dark Green) -->
+    <color name="color_background">#06110B</color>
+    <color name="color_background_secondary">#0B1B13</color>
+    <color name="color_surface">#CC0D2016</color> <!-- 80% opacity for frosted glass -->
+    <color name="color_surface_variant">#132B1F</color>
+    <color name="color_card">#CC0B1B13</color> <!-- 80% opacity -->
+    <color name="color_card_elevated">#E6132B1F</color>
+
+    <!-- Text Colors (High Contrast, Elegant) -->
+    <color name="color_on_primary">#022C22</color> <!-- Dark Green for text on Emerald -->
+    <color name="color_on_background">#ECFDF5</color>
+    <color name="color_on_surface">#D1FAE5</color>
+    <color name="color_on_surface_variant">#A7F3D0</color>
+    <color name="color_outline">#1F3D2D</color>
+    <color name="color_text_primary">#ECFDF5</color>
+    <color name="color_text_secondary">#6EE7B7</color>
+    <color name="color_text_hint">#34D399</color>
+    <color name="color_text_disabled">#1F3D2D</color>
+
+    <!-- Semantic Colors -->
+    <color name="color_error">#F87171</color>
+    <color name="color_error_light">#7F1D1D</color>
+    <color name="color_error_bg">#2A1010</color>
+    <color name="color_success">#34D399</color>
+    <color name="color_warning">#FBBF24</color>
+    <color name="color_info">#38BDF8</color>
+
+    <!-- Input / Border Colors -->
+    <color name="color_input_background">#0B1B13</color>
+    <color name="color_input_border">#1F3D2D</color>
+    <color name="color_input_border_focused">#10B981</color>
+    <color name="color_input_text">#ECFDF5</color>
+    <color name="color_input_hint">#059669</color>
+
+    <!-- Divider & Overlay -->
+    <color name="color_divider">#1F3D2D</color>
+    <color name="color_overlay">#B3020604</color> <!-- 70% opacity deep dark green -->
+
+    <!-- Component specific colors -->
+    <color name="color_setting_card_bg">#11FFFFFF</color>
+    <color name="color_chat_ai_bg">#1AFFFFFF</color>
+    <color name="color_chat_ai_stroke">#33FFFFFF</color>
+
+    <!-- Dashboard header -->
+    <color name="color_dashboard_header_start">#660B1B13</color>
+    <color name="color_dashboard_header_end">#0006110B</color>
+
+    <!-- AI Ambient Glow -->
+    <color name="color_ai_glow_start">#051010</color>
+    <color name="color_ai_glow_center">#051414</color>
+    <color name="color_ai_glow_end">#0B1A1B</color>
+
+    <!-- Glass Card -->
+    <color name="color_glass_solid">#26FFFFFF</color>
+    <color name="color_glass_stroke">#1AFFFFFF</color>
+
+    <!-- Background drawables specific -->
+    <color name="color_code_block_bg">#0DFFFFFF</color>
+    <color name="color_code_block_stroke">#1AFFFFFF</color>
+    <color name="color_ambient_emerald_start">#4D00FF9D</color>
+    <color name="color_ambient_cyan_start">#4D00E5FF</color>
+
+    <!-- Splash & Status Bar -->
+    <color name="color_splash_background">#040906</color>
+    <color name="color_status_bar">#040906</color>
+    <color name="color_navigation_bar">#040906</color>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_md"
+    android:layout_marginVertical="@dimen/spacing_xs"
+    style="@style/Widget.Cognify.Card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Type icon indicator -->
+            <ImageView
+                android:id="@+id/ivScheduleIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_alarm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="?attr/colorSecondary" />
+
+            <!-- Title / Summary -->
+            <TextView
+                android:id="@+id/tvScheduleTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="@dimen/text_body"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/tvScheduleTime"
+                app:layout_constraintStart_toEndOf="@id/ivScheduleIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Design review presentation" />
+
+            <!-- Description/Subtext -->
+            <TextView
+                android:id="@+id/tvScheduleSubtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="@dimen/text_sm"
+                app:layout_constraintEnd_toStartOf="@id/tvScheduleTime"
+                app:layout_constraintStart_toEndOf="@id/ivScheduleIcon"
+                app:layout_constraintTop_toBottomOf="@id/tvScheduleTitle"
+                tools:text="Sprint project deadline" />
+
+            <!-- Time trigger / Due date -->
+            <TextView
+                android:id="@+id/tvScheduleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="@dimen/text_sm"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="11:00 AM" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Schedule Action Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScheduleEdit"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:paddingHorizontal="10dp"
+                android:text="@string/ui_open"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="@dimen/text_xs"
+                app:backgroundTint="@android:color/transparent"
+                app:strokeColor="?attr/colorSecondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScheduleDelete"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:paddingHorizontal="10dp"
+                android:text="@string/ui_delete"
+                android:textColor="?attr/colorError"
+                android:textSize="@dimen/text_xs"
+                app:backgroundTint="@android:color/transparent"
+                app:strokeColor="?attr/colorError" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+

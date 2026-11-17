@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/screen_padding_horizontal"
+    android:layout_marginVertical="6dp"
+    style="@style/Widget.Cognify.Card"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="?attr/colorControlHighlight"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            app:chipMinHeight="24dp"
+            app:chipCornerRadius="12dp"
+            app:chipBackgroundColor="?attr/colorSurfaceVariant"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="?attr/colorOutline"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="CODE" />
+
+        <ImageView
+            android:id="@+id/iv_pinned"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_pin_outline"
+            app:tint="?attr/colorSecondary"
+            android:visibility="visible"
+            android:contentDescription="Pinned status"
+            app:layout_constraintBottom_toBottomOf="@id/chip_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chip_type" />
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            android:src="@drawable/ic_favorite_border"
+            app:tint="?attr/colorPrimary"
+            android:visibility="visible"
+            android:contentDescription="Favorite status"
+            app:layout_constraintBottom_toBottomOf="@id/iv_pinned"
+            app:layout_constraintEnd_toStartOf="@id/iv_pinned"
+            app:layout_constraintTop_toTopOf="@id/iv_pinned" />
+
+        <ImageView
+            android:id="@+id/iv_private"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            android:src="@drawable/ic_lock_open"
+            app:tint="?attr/colorOnSurfaceVariant"
+            android:visibility="visible"
+            android:contentDescription="Privacy status"
+            app:layout_constraintBottom_toBottomOf="@id/iv_favorite"
+            app:layout_constraintEnd_toStartOf="@id/iv_favorite"
+            app:layout_constraintTop_toTopOf="@id/iv_favorite" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_type"
+            tools:text="Kotlin Coroutines – Flow operators" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingExtra="2dp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:text="A concise note about the key Flow operators: map, flatMapLatest, combine, and stateIn." />
+
+        <LinearLayout
+            android:id="@+id/layout_code_block"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_code_block"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            tools:visibility="visible">
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:maxLines="5"
+                android:scrollbars="horizontal"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="13sp"
+                tools:text="val result = flow&#10;    .map { it * 2 }&#10;    .stateIn(scope, SharingStarted.Lazily, 0)" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_copy_code"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Copy code"
+                    app:tint="?attr/colorPrimary"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_copy" />
+                <ImageButton
+                    android:id="@+id/btn_share_code"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Share code"
+                    app:tint="?attr/colorSecondary"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_share" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_meta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toStartOf="@id/tv_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_code_block">
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textSize="11sp"
+                app:chipMinHeight="22dp"
+                app:chipBackgroundColor="?attr/colorSurfaceVariant"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="Kotlin"
+                tools:visibility="visible" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textSize="11sp"
+                app:chipMinHeight="22dp"
+                app:chipBackgroundColor="?attr/colorSurfaceVariant"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="Intermediate"
+                tools:visibility="visible" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/chip_group_meta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chip_group_meta"
+            tools:text="Jul 29" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

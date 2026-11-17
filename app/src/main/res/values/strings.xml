@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cognify</string>
+    <string name="app_subtitle">AI-Powered Productivity &amp; Knowledge Management</string>
+    <string name="app_tagline">Think Smarter. Work Better.</string>
+
+    <!-- Auth Common -->
+    <string name="label_email">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="label_full_name">Full Name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_confirm_password">Re-enter your password</string>
+    <string name="hint_full_name">Enter your full name</string>
+    <string name="hint_reset_email">Enter your registered email</string>
+
+    <!-- Login -->
+    <string name="title_welcome_back">Welcome Back</string>
+    <string name="subtitle_login">Sign in to continue your journey</string>
+    <string name="btn_login">Sign In</string>
+    <string name="tv_forgot_password">Forgot Password?</string>
+    <string name="tv_no_account">Don\'t have an account? <b>Sign Up</b></string>
+    <string name="btn_google_signin">Sign in with Google</string>
+
+    <!-- Signup -->
+    <string name="title_create_account">Create Account</string>
+    <string name="subtitle_signup">Join Cognify to boost your productivity</string>
+    <string name="btn_signup">Create Account</string>
+    <string name="tv_have_account">Already have an account? <b>Sign In</b></string>
+
+    <!-- Forgot Password -->
+    <string name="title_forgot_password">Reset Password</string>
+    <string name="subtitle_forgot_password">Enter your email and we\'ll send you a reset link</string>
+    <string name="btn_send_reset">Send Reset Link</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Dashboard -->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="subtitle_dashboard">Your productivity hub</string>
+    <string name="btn_logout">Sign Out</string>
+    <string name="tv_dashboard_coming_soon">More features coming in Phase 2!</string>
+    <string name="tv_dashboard_welcome">Welcome to Cognify</string>
+
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_app_logo">Cognify logo</string>
+    <string name="cd_toggle_password">Toggle password visibility</string>
+    <string name="cd_loading">Loading</string>
+    <string name="cd_open_menu">Open menu</string>
+    <string name="cd_profile">Profile</string>
+    <string name="cd_add_new">Add new</string>
+    <string name="cd_save">Save</string>
+    <string name="cd_profile_photo">Profile photo</string>
+
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_network">No internet connection. Please check your network.</string>
+
+    <!-- Settings -->
+    <string name="title_settings">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme_mode">Theme Mode</string>
+    <string name="settings_dynamic_colors">Dynamic Colors (Android 12+)</string>
+    <string name="settings_language">Language</string>
+    
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notify_tasks">Task Reminders</string>
+    <string name="settings_notify_calendar">Calendar Events</string>
+    <string name="settings_notify_daily_summary">Daily Summary</string>
+    <string name="settings_notify_ai_suggestions">AI Suggestions</string>
+    <string name="settings_notify_weekly_report">Weekly Report</string>
+    
+    <string name="settings_ai_settings">AI Settings</string>
+    <string name="settings_ai_default_mode">Default AI Mode</string>
+    <string name="settings_ai_usage_today">Today\'s AI Usage</string>
+    <string name="settings_ai_assistant">AI Assistant</string>
+    <string name="settings_doc_analysis">Document Analysis</string>
+    
+    <string name="settings_smart_inbox">Smart Inbox</string>
+    <string name="settings_smart_inbox_desc">Connect Gmail to let Cognify read your emails and identify important opportunities such as internships, placements, hackathons and workshops.</string>
+    <string name="settings_gmail">Gmail</string>
+    <string name="settings_gmail_connected">Connected</string>
+    <string name="settings_gmail_connecting">Connecting...</string>
+    <string name="settings_gmail_not_connected">Not connected</string>
+    <string name="settings_connect_gmail">Connect Gmail</string>
+    <string name="settings_disconnect_gmail">Disconnect Gmail</string>
+    <string name="settings_open_smart_inbox">Open Smart Inbox</string>
+    
+    <string name="settings_productivity_defaults">Productivity Defaults</string>
+    <string name="settings_default_task_priority">Default Task Priority</string>
+    <string name="settings_default_study_duration">Default Study Duration</string>
+    <string name="settings_first_day_of_week">First Day of Week</string>
+    
+    <string name="settings_about_support">About &amp; Support</string>
+    <string name="settings_app_desc">AI-Powered Productivity &amp; Knowledge Management System</string>
+    <string name="settings_technology">Technology</string>
+    <string name="settings_tech_stack">Kotlin • Android • Material Design 3 • Room • Firebase • Gemini AI</string>
+    <string name="settings_help_support">Help &amp; Support</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_licenses">Licenses</string>
+    
+    <string name="settings_danger_zone">Danger Zone</string>
+    <string name="settings_clear_cache">Clear Local Cache</string>
+    <string name="settings_delete_account">Delete Account</string>
+
+
+    <!-- Dynamically Extracted UI Strings -->
+    <string name="ui_snooze">Snooze</string>
+    <string name="ui_dismiss">Dismiss</string>
+    <string name="ui_you_are_currently_offline">You are currently offline.</string>
+    <string name="ui_08_00_am">08:00 AM</string>
+    <string name="ui_repeat">Repeat</string>
+    <string name="ui_sound">Sound</string>
+    <string name="ui_snooze_duration">Snooze Duration</string>
+    <string name="ui_vibrate_while_ringing">Vibrate while ringing</string>
+    <string name="ui_skip_public_holidays">Skip Public Holidays</string>
+    <string name="ui_alarm_label">Alarm Label</string>
+    <string name="ui_clear_history">Clear History</string>
+    <string name="ui_cognify">Cognify</string>
+    <string name="ui_version_1_0_0">Version 1.0.0</string>
+    <string name="ui_cognify_is_an_ai_powered_produ">Cognify is an AI-powered productivity assistant designed to seamlessly blend task management, a knowledge vault, and local generative intelligence.</string>
+    <string name="ui_open_source_licenses">Open Source Licenses</string>
+    <string name="ui_about_cognify">About Cognify</string>
+    <string name="ui_favorite">Favorite</string>
+    <string name="ui_pinned">Pinned</string>
+    <string name="ui_private_note_code_protected_am">Private Note / Code (Protected &amp; Hidden from AI)</string>
+    
+    <string name="ui_new_entry">New Entry</string>
+    <string name="ui_title">Title *</string>
+    <string name="ui_type">Type</string>
+    <string name="ui_enter_custom_type">Enter Custom Type</string>
+    <string name="ui_description">Description</string>
+    <string name="ui_code_block_optional">Code Block (optional)</string>
+    <string name="ui_language">Language</string>
+    <string name="ui_difficulty">Difficulty</string>
+    <string name="ui_category">Category</string>
+    <string name="ui_tags_comma_separated">Tags (comma-separated)</string>
+    <string name="ui_source_url_or_reference">Source (URL or reference)</string>
+    <string name="ui_select_date">Select Date</string>
+    <string name="ui_select_time">Select Time</string>
+    <string name="ui_linked_items_optional">Linked Items (Optional)</string>
+    <string name="ui_notification_preferences_place">Notification Preferences (Placeholder)</string>
+    <string name="ui_custom_reminder_sound">Custom Reminder Sound</string>
+    <string name="ui_vibrate_on_alert">Vibrate on Alert</string>
+    <string name="ui_new_reminder">New Reminder</string>
+    <string name="ui_description_optional">Description (optional)</string>
+    <string name="ui_reminder_type">Reminder Type</string>
+    <string name="ui_priority">Priority</string>
+    <string name="ui_repeat_interval">Repeat Interval</string>
+    <string name="ui_link_category">Link Category</string>
+    <string name="ui_linked_item_id_or_title">Linked Item ID or Title</string>
+    <string name="ui_default_snooze_duration">Default Snooze Duration</string>
+    <string name="ui_low">Low</string>
+    <string name="ui_medium">Medium</string>
+    <string name="ui_high">High</string>
+    <string name="ui_status">Status</string>
+    <string name="ui_pending">Pending</string>
+    <string name="ui_in_progress">In Progress</string>
+    <string name="ui_completed">Completed</string>
+    <string name="ui_select_due_date">Select Due Date</string>
+    <string name="ui_save_task">Save Task</string>
+    <string name="ui_delete_task">Delete Task</string>
+    <string name="ui_task_details">Task Details</string>
+    <string name="ui_task_title">Task Title</string>
+    <string name="ui_category_e_g_work_personal">Category (e.g. Work, Personal)</string>
+    <string name="ui_ai_chat">✨ AI Chat</string>
+    <string name="ui_0_20_used_today">0 / 20 used today</string>
+    <string name="ui_hello">Hello</string>
+    <string name="ui_what_would_you_like_to_work_on">What would you like to work on today?</string>
+    <string name="ui_delete_note">Delete Note?</string>
+    <string name="ui_professional">Professional</string>
+    <string name="ui_i_am_a_student">I am a student</string>
+    <string name="ui_this_action_cannot_be_undone">This action cannot be undone.</string>
+    
+    <string name="ui_confirm">Confirm</string>
+    <string name="ui_cognify_ai_is_thinking">Cognify AI is thinking...</string>
+    <string name="ui_cognify_ai_assistant">Cognify AI Assistant</string>
+    <string name="ui_what_is_on_your_mind">What is on your mind?</string>
+    <string name="ui_ai_assistant">AI Assistant</string>
+    <string name="ui_document_analysis">Document Analysis</string>
+    <string name="ui_limits_reset_daily_at_local_mi">Limits reset daily at local midnight.</string>
+    <string name="ui_ai_usage_limits">AI Usage Limits</string>
+    <string name="ui_productivity">Productivity</string>
+    <string name="ui_study_streak">Study Streak</string>
+    <string name="ui_tasks_done">Tasks Done</string>
+    <string name="ui_knowledge">Knowledge</string>
+    <string name="ui_productivity_insight">Productivity Insight</string>
+    <string name="ui_ai_generating_insights">AI generating insights...</string>
+    <string name="ui_weekly_tasks">Weekly Tasks</string>
+    <string name="ui_activity_timeline">Activity Timeline</string>
+    <string name="ui_not_enough_data_yet">Not enough data yet</string>
+    <string name="ui_keep_using_cognify_and_your_pr">Keep using Cognify and your productivity insights will appear here.</string>
+    <string name="ui_analytics">Analytics</string>
+    <string name="ui_local_backup_status">Local Backup Status</string>
+    <string name="ui_checking">Checking...</string>
+    <string name="ui_last_backup">Last Backup</string>
+    <string name="ui_items_synced">Items Synced</string>
+    <string name="ui_backup_size">Backup Size</string>
+    <string name="ui_backup_data">Backup Data</string>
+    <string name="ui_restore_data">Restore Data</string>
+    <string name="ui_backup_amp_restore">Backup &amp; Restore</string>
+    <string name="ui_normal">Normal</string>
+    <string name="ui_sci">Sci</string>
+    <string name="ui_currency">Currency</string>
+    <string name="ui_deg">DEG</string>
+    <string name="ui_ac">AC</string>
+    <string name="ui_del">DEL</string>
+    <string name="ui_7">7</string>
+    <string name="ui_8">8</string>
+    <string name="ui_9">9</string>
+    <string name="ui_4">4</string>
+    <string name="ui_5">5</string>
+    <string name="ui_6">6</string>
+    <string name="ui_2">2</string>
+    <string name="ui_3">3</string>
+    <string name="ui_sin">sin</string>
+    <string name="ui_cos">cos</string>
+    <string name="ui_tan">tan</string>
+    <string name="ui_e">e</string>
+    <string name="ui_ln">ln</string>
+    <string name="ui_log">log</string>
+    <string name="ui_usd">USD</string>
+    <string name="ui_eur">EUR</string>
+    <string name="ui_1_usd_0_92_eur">1 USD = 0.92 EUR</string>
+    <string name="ui_rate_updated_2026_09_21">Rate updated: 2026-09-21</string>
+    <string name="ui_unable_to_fetch_the_latest_exc">Unable to fetch the latest exchange rate.</string>
+    <string name="ui_clear">Clear</string>
+    <string name="ui_calculator">Calculator</string>
+    <string name="ui_no_events_today">No events today.</string>
+    <string name="ui_tap_the_button_to_add_a_new_ev">Tap the + button to add a new event.</string>
+    <string name="ui_calendar_amp_schedule">Calendar &amp; Schedule</string>
+    <string name="ui_alarm">Alarm</string>
+    <string name="ui_timer">Timer</string>
+    <string name="ui_stopwatch">Stopwatch</string>
+    <string name="ui_add_new_alarm">+ Add New Alarm</string>
+    <string name="ui_05_00">05:00</string>
+    <string name="ui_1_min">+1 min</string>
+    <string name="ui_5_min">+5 min</string>
+    <string name="ui_10_min">+10 min</string>
+    <string name="ui_set">Set</string>
+    <string name="ui_start">Start</string>
+    <string name="ui_reset">Reset</string>
+    <string name="ui_00_00_00">00:00.00</string>
+    <string name="ui_lap">Lap</string>
+    <string name="ui_clock_amp_timers">Clock &amp; Timers</string>
+    <string name="ui_hh">HH</string>
+    <string name="ui_mm">MM</string>
+    <string name="ui_ss">SS</string>
+    <string name="ui_no_code_snippets_saved_yet_nta">No code snippets saved yet.
+Tap + to add your first snippet!</string>
+    <string name="ui_code_base_amp_snippets">Code Base &amp; Snippets</string>
+    <string name="ui_search_code_snippets">Search code snippets...</string>
+    <string name="ui_no_recent_conversations">No recent conversations</string>
+    <string name="ui_recent_conversations">Recent Conversations</string>
+    <string name="ui_what_s_on_your_agenda_today">What\'s on your agenda today?</string>
+    <string name="ui_add_task">Add Task</string>
+    <string name="ui_add_note">Add Note</string>
+    <string name="ui_add_reminder">Add Reminder</string>
+    <string name="ui_schedule">Schedule</string>
+    <string name="ui_today_s_progress">Today\'s Progress</string>
+    <string name="ui_0">0%</string>
+    <string name="ui_0_of_0_tasks_completed">0 of 0 tasks completed</string>
+    <string name="ui_productivity_overview">Productivity Overview</string>
+    <string name="ui_today_s_tasks">Today\'s Tasks</string>
+    <string name="ui_pending_tasks">Pending Tasks</string>
+    <string name="ui_notes">Notes</string>
+    <string name="ui_snippets">Snippets</string>
+    <string name="ui_weekly_activity">Weekly Activity</string>
+    <string name="ui_today">Today</string>
+    <string name="ui_done">Done</string>
+    <string name="ui_no_tasks_yet">No tasks yet.</string>
+    <string name="ui_today_s_schedule">Today\'s Schedule</string>
+    <string name="ui_view_calendar">View Calendar</string>
+    <string name="ui_search_tasks_reminders">Search tasks, reminders...</string>
+    <string name="ui_0_3_used_today">0 / 3 used today</string>
+    <string name="ui_analyze_a_document">Analyze a Document</string>
+    <string name="ui_summarize_pdfs_notes_and_ntech">Summarize PDFs, notes and
+technical documents with AI</string>
+    <string name="ui_select_document">Select Document</string>
+    <string name="ui_what_would_you_like_to_do">What would you like to do?</string>
+    <string name="ui_try_again">Try Again</string>
+    <string name="ui_analyze_document">Analyze Document</string>
+    <string name="ui_discard_document">Discard Document</string>
+    <string name="ui_ai_analysis">AI Analysis</string>
+    <string name="ui_copy">Copy</string>
+    <string name="ui_analyzing_document">Analyzing document...</string>
+    <string name="ui_instruction_e_g_summarize_this">Instruction (e.g. Summarize this document)</string>
+    <string name="ui_select_data_to_export">Select Data to Export</string>
+    <string name="ui_export_your_saved_notes">Export your saved notes</string>
+    <string name="ui_code">Code</string>
+    <string name="ui_export_your_programming_knowle">Export your programming knowledge</string>
+    <string name="ui_generate_export">Generate Export</string>
+    <string name="ui_export_data">Export Data</string>
+    <string name="ui_open_in_gmail">Open in Gmail</string>
+    <string name="ui_ai_smart_extraction">AI Smart Extraction</string>
+    <string name="ui_analyze_email_with_ai">Analyze Email with AI</string>
+    <string name="ui_original_content">Original Content</string>
+    <string name="ui_email_details">Email Details</string>
+    <string name="ui_how_does_ai_mode_work">How does AI mode work?</string>
+    <string name="ui_cognify_uses_a_locally_integra">When you use AI features, relevant content may be transmitted through Cognify\'s backend to third-party AI service providers for processing. This is subject to the providers\' terms.</string>
+    <string name="ui_where_is_my_data_stored">Where is my data stored?</string>
+    <string name="ui_by_default_all_your_data_is_st">By default, all your data is stored locally on your device for privacy. If you choose to enable cloud sync, it is securely backed up to Firebase Firestore.</string>
+    
+    <string name="ui_faq_cognify_overview">What is Cognify?</string>
+    <string name="ui_faq_cognify_overview_desc">Cognify is a productivity application that integrates task management, knowledge tracking, AI assistance, and document analysis.</string>
+    <string name="ui_faq_tasks_notes">How do I manage tasks and notes?</string>
+    <string name="ui_faq_tasks_notes_desc">You can create, edit, and organize tasks and notes from the Dashboard. You can also set reminders for them.</string>
+    <string name="ui_faq_smart_inbox">How does Smart Inbox work?</string>
+    <string name="ui_faq_smart_inbox_desc">Smart Inbox securely reads your Gmail to find opportunities. Email content may be sent to our backend and third-party AI services for analysis. Data is not used for advertising.</string>
+    <string name="ui_faq_account_login">How does my account work?</string>
+    <string name="ui_faq_account_login_desc">You can use Cognify as a guest or sign in with Google/Email to sync your data across devices securely.</string>
+    <string name="ui_faq_settings">How do I change Settings?</string>
+    <string name="ui_faq_settings_desc">Navigate to the Settings tab to change your theme, language, AI preferences, and notification settings.</string>
+    <string name="ui_help_amp_faq">Help &amp; FAQ</string>
+    <string name="ui_all">All</string>
+    <string name="ui_sql">SQL</string>
+    <string name="ui_linux">Linux</string>
+    <string name="ui_interview">Interview</string>
+    <string name="ui_favorites">Favorites</string>
+    <string name="ui_your_knowledge_vault_is_empty">Your Knowledge Vault is empty</string>
+    <string name="ui_save_notes_code_and_useful_inf">Save notes, code and useful information
+here for quick access later.</string>
+    <string name="ui_knowledge_vault">Knowledge Vault</string>
+    <string name="ui_search_knowledge">Search knowledge...</string>
+    <string name="ui_or">OR</string>
+    <string name="ui_data_collection_amp_privacy">Data Collection &amp; Privacy</string>
+    <string name="ui_cognify_values_your_privacy_by">Cognify values your privacy. By default, all tasks, knowledge vault items, and settings are stored locally on your device using a local database. 
+
+If you choose to sign in, your data (tasks, notes, reminders, limits, profile photo) will be securely backed up to Firebase Firestore to allow synchronization. Your profile photo (if any) is managed by Firebase Authentication.</string>
+    <string name="ui_generative_ai">Generative AI</string>
+    <string name="ui_when_using_the_ai_features_rel">When you use Cognify\'s AI features, relevant content you provide may be transmitted through Cognify\'s backend infrastructure to third-party AI service providers for processing and generation of the requested result. The handling of this content is also subject to the applicable provider\'s terms and privacy practices.</string>
+    <string name="ui_privacy_policy">Privacy Policy</string>
+    <string name="ui_edit_profile">Edit Profile</string>
+    <string name="ui_quick_statistics">Quick Statistics</string>
+    <string name="ui_tasks">Tasks</string>
+    <string name="ui_data_management">Data Management</string>
+    <string name="ui_backup_amp_sync">Backup &amp; Sync</string>
+    <string name="ui_sign_out">Sign Out</string>
+    <string name="ui_profile_unavailable">Profile unavailable</string>
+    <string name="ui_please_sign_in_again_to_load_y">Please sign in again to load your account information.</string>
+    <string name="ui_sign_in">Sign In</string>
+    <string name="ui_profile">Profile</string>
+    <string name="ui_active">Active</string>
+    <string name="ui_birthdays">Birthdays</string>
+    <string name="ui_task_deadlines">Task Deadlines</string>
+    <string name="ui_no_reminders_scheduled">No reminders scheduled</string>
+    <string name="ui_tap_the_button_to_create_a_new">Tap the + button to create a new reminder.</string>
+    <string name="ui_reminders">Reminders</string>
+    <string name="ui_not_connected">Not connected</string>
+    <string name="ui_cognify_reads_your_gmail_messa">Cognify reads your Gmail messages using Google\'s read-only Gmail permission to identify emails related to opportunities. Cognify cannot send, delete, modify, or compose emails. Data is used only for providing the Smart Inbox feature and is not used for advertising.</string>
+    <string name="ui_no_messages_found">No messages found</string>
+    <string name="ui_smart_inbox">Smart Inbox</string>
+    <string name="ui_custom_search_keyword">Custom search keyword</string>
+    <string name="ui_07_00_am">07:00 AM</string>
+    <string name="ui_3_minutes_left">3 minutes left</string>
+    <string name="ui_morning_alarm_mon_tue_wed_thu">Morning Alarm • Mon, Tue, Wed, Thu, Fri</string>
+    <string name="ui_retry">Retry</string>
+    <string name="ui_lap_1">Lap 1</string>
+    <string name="ui_open">Open</string>
+    <string name="ui_delete">Delete</string>
+    <string name="ui_create_new">Create New</string>
+    <string name="ui_new_task">New Task</string>
+    <string name="ui_new_note">New Note</string>
+    <string name="ui_new_code_snippet">New Code Snippet</string>
+    <string name="ui_cognify_user">Cognify User</string>
+    <string name="ui_user_cognify_app">user@cognify.app</string>
+
+    <!-- Dynamic Kotlin Strings -->
+    <string name="dashboard_greeting">%1$s
+%2$s 👋</string>
+    <string name="dashboard_progress_tasks">%1$d of %2$d tasks completed</string>
+    <string name="dashboard_last_synced">Last synced: %1$s</string>
+    <string name="dashboard_loading">Loading...</string>
+    <string name="calendar_schedule_for">Schedule for %1$s</string>
+    <string name="calendar_items_scheduled">%1$d scheduled</string>
+    <string name="alarm_snooze_duration">Snooze (%1$dm)</string>
+    <string name="alarm_item_subtitle">Alarm • %1$s</string>
+    <string name="settings_gmail_disconnected">Gmail disconnected</string>
+    <string name="settings_cache_cleared">Cache cleared</string>
+    <string name="settings_account_deleted">Account deleted</string>
+    <string name="settings_account_delete_failed">Failed to delete account</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_ai_usage">%1$d / %2$d remaining today</string>
+    <string name="smart_inbox_conn_expired">Gmail connection expired. Please reconnect your Gmail account in Settings.</string>
+    <string name="smart_inbox_no_internet">No internet connection. Please check your connection and try again.</string>
+    <string name="smart_inbox_no_messages">No messages found</string>
+    <string name="smart_inbox_cant_open">Could not open Gmail</string>
+    <string name="smart_inbox_analyses_rem">You have %1$d analyses remaining today (%2$d/%3$d).</string>
+    <string name="smart_inbox_datetime">Date/Time: %1$s</string>
+    <string name="smart_inbox_deadline">Deadline: %1$s</string>
+    <string name="smart_inbox_action_items">Action Items:
+</string>
+    <string name="task_subtitle">%1$s • %2$s</string>
+    <string name="task_due_in">Due in %1$d days</string>
+    <string name="task_overdue">Overdue — was due %1$d days ago</string>
+    <string name="auth_failed">Auth failed: %1$s</string>
+    <string name="code_copied">Code copied</string>
+    <string name="profile_photo_updated">Profile photo updated</string>
+    <string name="profile_photo_failed">Failed to update photo</string>
+    <string name="profile_photo_removed">Profile photo removed</string>
+    <string name="profile_updated_success">Profile updated successfully!</string>
+    <string name="export_cancelled">Export cancelled</string>
+    <string name="export_select_data">Please select data to export.</string>
+    <string name="reminder_time">Time: </string>
+    <string name="reminder_linked">Linked: %1$s</string>
+    <string name="speech_not_supported">Speech Recognition is not supported on this device.</string>
+    <string name="analytics_tasks_completed">Tasks Completed</string>
+
+    <string name="smart_inbox_dialog_title">Analyze Email</string>
+    <string name="smart_inbox_dialog_message">Your email content will be securely sent to the AI backend for extraction. Ensure you have checked your email content for privacy. Do you want to proceed?</string>
+    <string name="smart_inbox_dialog_proceed">Proceed</string>
+    <string name="smart_inbox_dialog_cancel">Cancel</string>
+    <string name="smart_inbox_no_subject">No Subject</string>
+    <string name="smart_inbox_unknown_sender">Unknown Sender</string>
+
+    <string name="ui_connected">Connected</string>
+    <string name="ui_disconnect_gmail">Disconnect Gmail</string>
+    <string name="ui_connecting">Connecting...</string>
+    <string name="ui_connect_gmail">Connect Gmail</string>
+
+    <string name="ui_unlock_private_note">Unlock Private Note</string>
+    <string name="ui_edit_entry">Edit Entry</string>
+    <string name="ui_edit_reminder">Edit Reminder</string>
+    <string name="ui_edit_task">Edit Task</string>
+
+    <string name="ui_today_schedule_calendar">Today\'s Schedule &amp; Calendar</string>
+    <string name="ui_clock_alarm_timers">Clock, Alarm &amp; Timers</string>
+    <string name="ui_productivity_insights">Productivity Insights</string>
+    <string name="ui_code_base_snippets">Code Base &amp; Snippets</string>
+    <string name="ui_account">Account</string>
+    <string name="ui_profile_settings">Profile &amp; Settings</string>
+
+
+    <!-- Additional English Strings -->
+    <string name="ui_good_morning">Good Morning,</string>
+    <string name="ui_good_afternoon">Good Afternoon,</string>
+    <string name="ui_good_evening">Good Evening,</string>
+    <string name="ui_good_night">Good Night,</string>
+    
+    <string name="ui_hello_name">Hello %1$s</string>
+    <string name="ui_how_can_i_help">How can I help you today?</string>
+    <string name="ui_saved_knowledge_vault">Saved to Knowledge Vault</string>
+    
+    <string name="ui_ai_sugg_tasks">Summarize my tasks today</string>
+    
+    <string name="ui_ai_sugg_tips">What are some tips for productivity?</string>
+    <string name="ui_ai_sugg_intern">Find internship opportunities from my emails</string>
+    <string name="ui_ai_sugg_goals">Remind me to review my goals</string>
+    
+    <string name="ui_task_created">Task Created</string>
+    <string name="ui_task_completed">Task Completed</string>
+    <string name="ui_knowledge_added">Knowledge Added</string>
+    <string name="ui_knowledge_viewed">Knowledge Viewed</string>
+    <string name="ui_reminder_completed">Reminder Completed</string>
+    <string name="ui_searched">Searched</string>
+    <string name="ui_activity_logged">Activity Logged</string>
+    
+    <string name="ui_analytics_insight_great">Great job! You\'ve completed %1$s tasks this week.</string>
+    <string name="ui_analytics_insight_try">Try to complete at least one task to build your streak.</string>
+
+    <string name="ui_cat_internships">Internships</string>
+    <string name="ui_cat_placements">Placements</string>
+    <string name="ui_cat_hackathons">Hackathons</string>
+    <string name="ui_cat_workshops">Workshops</string>
+    <string name="ui_cat_symposiums">Symposiums</string>
+    <string name="ui_cat_seminars">Seminars</string>
+    <string name="ui_cat_college_events">College Events</string>
+    <string name="ui_cat_company_opportunities">Company Opportunities</string>
+    <string name="ui_cat_important_deadlines">Important Deadlines</string>
+    
+    <string name="ui_smart_inbox_subtitle">Important emails from your Gmail</string>
+
+    <string name="dashboard_overdue_tasks">You have %1$d overdue task(s). Consider asking AI to help prioritize them.</string>
+    <string name="ai_greeting">Hello, %1$s</string>
+    <string name="analytics_no_data">No chart data available.</string>
+
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_ta">தமிழ்</string>
+    <string name="settings_ai_general">General</string>
+    <string name="settings_ai_task">Task</string>
+    <string name="settings_ai_knowledge">Knowledge</string>
+    <string name="settings_ai_study">Study</string>
+    <string name="settings_priority_low">Low</string>
+    <string name="settings_priority_medium">Medium</string>
+    <string name="settings_priority_high">High</string>
+    <string name="settings_day_sunday">Sunday</string>
+    <string name="settings_day_monday">Monday</string>
+    <string name="ui_schedule_for">Schedule for %1$s</string>
+    <string name="ui_new_chat">New Chat</string>
+    <string name="ui_history">History</string>
+
+    <string name="ui_cat_custom">Custom</string>
+    <string name="ui_knowledge_subtitle">Your personal knowledge collection</string>
+    <plurals name="analytics_study_duration_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="analytics_weekly_completed_tasks">
+        <item quantity="one">You completed %d task this week. Keep up the good work!</item>
+        <item quantity="other">You completed %d tasks this week. Keep up the good work!</item>
+    </plurals>
+    <plurals name="ui_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <string name="ui_new_alarm">New Alarm</string>
+    <string name="ui_edit_alarm">Edit Alarm</string>
+    <string name="ui_knowledge_type_note">Note</string>
+    <string name="ui_knowledge_type_code">Code</string>
+    <string name="ui_knowledge_type_link">Link</string>
+    <string name="ui_type_general">General</string>
+    <string name="ui_type_meeting">Meeting</string>
+    <string name="ui_type_deadline">Deadline</string>
+    <string name="ui_others">Others</string>
+    <string name="ui_priority_high">High</string>
+    <string name="ui_priority_medium">Medium</string>
+    <string name="ui_priority_low">Low</string>
+    <string name="ui_repeat_none">Does not repeat</string>
+    <string name="ui_repeat_daily">Daily</string>
+    <string name="ui_repeat_weekly">Weekly</string>
+    <string name="ui_repeat_monthly">Monthly</string>
+    <string name="ui_repeat_yearly">Yearly</string>
+    <string name="ui_link_none">None</string>
+    <string name="ui_link_task">Task</string>
+    <string name="ui_link_knowledge">Knowledge</string>
+    <string name="ui_repeat_once">Once</string>
+    <string name="ui_repeat_every_day">Every day</string>
+    <string name="ui_repeat_mwf">Mon, Wed, Fri</string>
+    <string name="ui_alarm_default">Default Alarm</string>
+    <string name="ui_alarm_classic">Classic</string>
+    <string name="ui_alarm_gentle">Gentle</string>
+    <string name="ui_alarm_beep">Beep</string>
+    <string name="ui_alarm_digital">Digital</string>
+    <string name="ui_alarm_silent">Silent</string>
+    <string name="ui_save">Save</string>
+    <string name="ui_cancel">Cancel</string>
+    <string name="ui_ai_sugg_email">Draft an email about X</string>
+    <string name="ui_ai_sugg_concept">Explain a complex concept</string>
+
+
+    <string name="ui_task_category">Task Category: %s</string>
+    <string name="ui_reminder_text">Reminder</string>
+
+    <string name="ui_knowledge_type_sql">SQL</string>
+    <string name="ui_knowledge_type_linux">Linux</string>
+    <string name="ui_knowledge_type_interview">Interview</string>
+    <string name="ui_knowledge_type_japanese">Japanese</string>
+    <string name="ui_knowledge_type_college">College</string>
+    <string name="ui_knowledge_type_documentation">Documentation</string>
+    <string name="ui_contact_support">Contact Support</string>
+    <string name="ui_contact_support_email">krctstu@gmail.com</string>
+    <string name="ui_no_email_app_found">No email app found to handle this request.</string>
+    <string name="ui_gmail_integration">Gmail Integration</string>
+    <string name="ui_gmail_integration_desc">Cognify will access Gmail messages after you grant authorization. Email content may be transmitted to Cognify\'s backend and third-party AI services for the Smart Inbox / Email Analysis feature, to identify and summarize relevant opportunities. This data is not used for advertising, unrelated profiling, or unrelated features. The requested access is limited strictly to providing this described functionality.</string>
+    <string name="ui_document_analysis_privacy">Document Analysis</string>
+    <string name="ui_document_analysis_desc">When you analyze a document, the selected PDF is sent to Cognify\'s backend for processing and may be transmitted to third-party services (such as OCR.space and NVIDIA AI services) for text extraction and analysis. The handling of this content is subject to the applicable providers\' terms and privacy practices.</string>
+    <string name="ui_local_data_storage">Local Data Storage</string>
+    <string name="ui_local_data_storage_desc">Your tasks, notes, calendar events, and app preferences are stored locally on your device. Any files you choose to export are also saved locally to your device storage.</string>
+    <string name="ui_account_deletion">Account &amp; Data Deletion</string>
+    <string name="ui_account_deletion_desc">You can permanently delete your account at any time from Settings > Delete Account. This action deletes your Firebase Authentication account, all your Firestore cloud data, and all local app data (including profile photos and active sessions). For assistance, contact krctstu@gmail.com.</string>
+    <string name="ui_licenses_title">Open Source Licenses</string>
+    <string name="ui_licenses_text">Cognify uses the following open-source software:\n\n• Kotlin (Apache License 2.0)\n• AndroidX Libraries (Apache License 2.0)\n• Material Components for Android (Apache License 2.0)\n• Firebase (Apache License 2.0)\n• Room Database (Apache License 2.0)\n• Gson (Apache License 2.0)\n• Retrofit &amp; OkHttp (Apache License 2.0)\n• Glide (BSD, MIT and Apache 2.0)\n• MPAndroidChart (Apache License 2.0)\n• Lottie for Android (Apache License 2.0)\n• Markwon (Apache License 2.0)\n• PDFBox-Android (Apache License 2.0)\n• Exp4j (Apache License 2.0)\n• Timber (Apache License 2.0)\n• Dagger Hilt (Apache License 2.0)\n• Google Generative AI SDK (Apache License 2.0)</string>
+    
+    <string name="ui_privacy_consent_title">Privacy &amp; Consent</string>
+    <string name="ui_privacy_consent_msg">Before you continue, please review Cognify\'s Privacy Policy and confirm that you agree to it.</string>
+    <string name="ui_privacy_consent_link">View Privacy Policy</string>
+    <string name="ui_privacy_consent_checkbox">I have read and agree to the Privacy Policy.</string>
+    <string name="ui_accept_continue">Accept &amp; Continue</string>
+    <string name="ui_privacy_policy_url" translatable="false">https://sites.google.com/view/cognify-privacy-2026/home</string>
+</resources>

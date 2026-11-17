@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify - Account Deletion</title>
+    <!-- Firebase SDKs (Compat) loaded via Firebase Hosting reserved URLs -->
+    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+    <!-- Initialize Firebase -->
+    <script defer src="/__/firebase/init.js"></script>
+    
+    <style>
+        :root {
+            --primary-color: #6750A4;
+            --surface-color: #FFFFFF;
+            --background-color: #F3EDF7;
+            --text-color: #1D1B20;
+            --error-color: #B3261E;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: var(--surface-color);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+        p {
+            line-height: 1.5;
+            margin-bottom: 24px;
+            font-size: 15px;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 12px;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #553e8a;
+        }
+        .btn-danger {
+            background-color: var(--error-color);
+        }
+        .btn-danger:hover {
+            background-color: #8c1d18;
+        }
+        .btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        #status-msg {
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        .error { color: var(--error-color); }
+        .success { color: #2E7D32; }
+        .hidden { display: none; }
+        
+        #user-info {
+            background-color: #f5f5f5;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            text-align: left;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Account Deletion</h1>
+    
+    <div id="section-login">
+        <p>Sign in to your Cognify account to proceed with permanent data deletion.</p>
+        <button id="btn-signin" class="btn">Sign In with Google</button>
+        <div id="status-msg-login" class="error hidden"></div>
+    </div>
+
+    <div id="section-delete" class="hidden">
+        <p>You are currently signed in as:</p>
+        <div id="user-info"></div>
+        <p class="error"><strong>Warning:</strong> Deleting your Cognify account permanently removes your Cognify account and associated Cognify data stored by the service, subject to any legally required retention. Support: krctstu@gmail.com</p>
+        
+        <button id="btn-delete" class="btn btn-danger">Delete My Account</button>
+        <button id="btn-signout" class="btn" style="background-color: #79747e;">Sign Out / Cancel</button>
+        
+        <div id="status-msg-delete" class="hidden"></div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Elements
+        const sectionLogin = document.getElementById('section-login');
+        const sectionDelete = document.getElementById('section-delete');
+        const btnSignin = document.getElementById('btn-signin');
+        const btnDelete = document.getElementById('btn-delete');
+        const btnSignout = document.getElementById('btn-signout');
+        const userInfo = document.getElementById('user-info');
+        const statusMsgLogin = document.getElementById('status-msg-login');
+        const statusMsgDelete = document.getElementById('status-msg-delete');
+
+        // Check auth state
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in
+                sectionLogin.classList.add('hidden');
+                sectionDelete.classList.remove('hidden');
+                userInfo.innerHTML = `<strong>${user.email}</strong><br><small>UID: ${user.uid}</small>`;
+                statusMsgDelete.classList.add('hidden');
+            } else {
+                // No user is signed in
+                sectionLogin.classList.remove('hidden');
+                sectionDelete.classList.add('hidden');
+                statusMsgLogin.classList.add('hidden');
+            }
+        });
+
+        // Sign in with Google
+        btnSignin.addEventListener('click', function() {
+            btnSignin.disabled = true;
+            statusMsgLogin.classList.add('hidden');
+            
+            const provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().signInWithPopup(provider)
+                .then(() => {
+                    btnSignin.disabled = false;
+                })
+                .catch((error) => {
+                    btnSignin.disabled = false;
+                    statusMsgLogin.innerText = "Error signing in: " + error.message;
+                    statusMsgLogin.classList.remove('hidden');
+                });
+        });
+
+        // Sign out
+        btnSignout.addEventListener('click', function() {
+            firebase.auth().signOut();
+        });
+
+        // Delete Account
+        btnDelete.addEventListener('click', async function() {
+            if (!confirm("Are you absolutely sure you want to delete your Cognify account? All your cloud data will be permanently erased. This cannot be undone.")) {
+                return;
+            }
+
+            btnDelete.disabled = true;
+            btnSignout.disabled = true;
+            statusMsgDelete.className = '';
+            statusMsgDelete.innerText = 'Deleting account data...';
+            
+            const user = firebase.auth().currentUser;
+            if (!user) return;
+
+            try {
+                const db = firebase.firestore();
+                const userRef = db.collection('users').doc(user.uid);
+                
+                // Helper to delete all documents in a collection
+                async function deleteCollection(collectionRef) {
+                    const snapshot = await collectionRef.get();
+                    const batchSize = snapshot.size;
+                    if (batchSize === 0) {
+                        return;
+                    }
+                    
+                    const batch = db.batch();
+                    snapshot.docs.forEach((doc) => {
+                        batch.delete(doc.ref);
+                    });
+                    await batch.commit();
+                }
+
+                statusMsgDelete.innerText = 'Deleting tasks...';
+                await deleteCollection(userRef.collection('tasks'));
+
+                statusMsgDelete.innerText = 'Deleting knowledge vault...';
+                await deleteCollection(userRef.collection('knowledgeVault'));
+
+                statusMsgDelete.innerText = 'Deleting reminders...';
+                await deleteCollection(userRef.collection('reminders'));
+                
+                statusMsgDelete.innerText = 'Deleting user profile...';
+                await userRef.delete();
+                
+                statusMsgDelete.innerText = 'Deleting authentication account...';
+                await user.delete();
+                
+                statusMsgDelete.className = 'success';
+                statusMsgDelete.innerText = 'Account successfully deleted.';
+                
+                sectionDelete.innerHTML = `<h2>Account Deleted</h2><p>Your Cognify account has been permanently deleted.</p><button class="btn" onclick="window.location.reload()">Return to Home</button>`;
+                
+            } catch (error) {
+                btnDelete.disabled = false;
+                btnSignout.disabled = false;
+                
+                if (error.code === 'auth/requires-recent-login') {
+                    statusMsgDelete.className = 'error';
+                    statusMsgDelete.innerText = 'For security reasons, please Sign Out and Sign In again to perform this action.';
+                } else {
+                    statusMsgDelete.className = 'error';
+                    statusMsgDelete.innerText = "Error: " + error.message;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
